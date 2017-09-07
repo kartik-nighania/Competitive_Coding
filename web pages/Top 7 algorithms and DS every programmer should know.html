@@ -1,0 +1,1907 @@
+<!DOCTYPE html>
+<!-- saved from url=(0112)http://blog.hackerearth.com/2015/05/top-7-algorithms-and-data-structures-every-programmer-should-know-about.html -->
+<html class="gr__blog_hackerearth_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="title" content="Top 7 algorithms and data structures every programmer should know about | HackerEarth Blog ">
+        <meta name="description" content="Coming from the background of Competitive Programming and Software Development, I have compiled a list of algorithms and data structures that every programmer should know about. We will see what they do and where they are used with simple examples. This list is prepared to keep in mind their use in competitive programming and current […]">
+        <meta property="og:image" content="http://blog.hackerearth.com/wp-content/uploads/2015/05/top7algo_poster.png">
+        <title>Top 7 algorithms and DS every programmer should know</title>
+
+    <link rel="shortcut icon" href="http://blog.hackerearth.com/wp-content/themes/hackerearth_blog/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="http://blog.hackerearth.com/wp-content/themes/hackerearth_blog/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Top 7 algorithms and DS every programmer should know_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./Top 7 algorithms and DS every programmer should know_files/owl.carousel.min.css">
+    <link rel="stylesheet" href="./Top 7 algorithms and DS every programmer should know_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Top 7 algorithms and DS every programmer should know_files/templates.css">
+    <!--    <link rel="stylesheet" href="--><!--/css/template-color.css">-->
+    <link rel="stylesheet" href="./Top 7 algorithms and DS every programmer should know_files/app.css">
+    <script async="" src="./Top 7 algorithms and DS every programmer should know_files/analytics.js"></script><script type="text/javascript" src="./Top 7 algorithms and DS every programmer should know_files/jquery-2.2.3.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-43585724-1', 'auto');
+        ga('send', 'pageview');
+        $(document).click(function(e){
+            if($(e.target).hasClass('icon-bar')){
+                $('.home nav.site-navigation').toggleClass('collapse');
+            }
+            if($(e.target).hasClass('navbar-toggle')){
+                $('.home nav.site-navigation').toggleClass('collapse');
+            }
+            $('.home .navbar-toggle').toggleClass('collapsed');
+            $('.home .navbar-toggle').attr('aria-expanded', true);
+            $('.home .navbar-toggle.collapsed').attr('aria-expanded', false);
+        });
+
+    </script>
+    <link href="./Top 7 algorithms and DS every programmer should know_files/css" rel="stylesheet">
+    <link href="./Top 7 algorithms and DS every programmer should know_files/css(1)" rel="stylesheet" type="text/css">
+    <style>
+        *{
+            font-family: 'Open Sans', sans-serif;
+        }
+        .widget_recent_entries ul li a, .widget_categories ul li a, .st-sc-categories ul li a {
+            color: #46535e !important;
+            position: relative;
+        }
+        .blog-header nav img {
+            width: auto !important;
+            max-width: 160px;
+        }
+        aside .widget-title {
+            margin-bottom: 0 !important;
+        }
+        aside ul li a {
+            padding-left: 0 !important;
+        }
+        aside ul li a:before {
+            display: none !important;
+        }
+        #stc-unsubscribe-wrapper {
+            padding: 100px 0;
+        }
+        .nc_socialPanel .swp_count {
+            padding-left: 6px;
+            display: inline-block;
+            text-align: center;
+        }
+        .nc_socialPanelSide.slide {
+            display: none;
+        }
+        .nc_tweetContainer.swp_fb .nc_tweet {
+            background-color: #3b5998;
+            width: 60px;
+            border-radius: 4px;
+            display: inline-block;
+            height: 30px;
+            color: #fff;
+            text-align: center;
+            padding-top: 5px;
+        }
+        .nc_tweet >.swp_count:not(.swp_hide) {
+            font-size: 13px;
+        }
+        .nc_tweetContainer.twitter .nc_tweet {
+            background-color: #1dcaff;
+            width: 60px;
+            border-radius: 4px;
+            display: inline-block;
+            height: 30px;
+            color: #fff;
+            text-align: center;
+            padding-top: 5px;
+        }
+        .nc_tweetContainer.googlePlus .nc_tweet {
+            background-color: #d34836;
+            width: 60px;
+            border-radius: 4px;
+            display: inline-block;
+            height: 30px;
+            color: #fff;
+            text-align: center;
+            padding-top: 5px;
+        }
+        .nc_tweetContainer.linkedIn .nc_tweet {
+            background-color: #4875B4;
+            width: 60px;
+            border-radius: 4px;
+            display: inline-block;
+            height: 30px;
+            color: #fff;
+            text-align: center;
+            padding-top: 5px;
+        }
+        .nc_socialPanel {
+            overflow: hidden;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .nc_tweetContainer {
+            float: left;
+            margin-right: 10px;
+        }
+
+
+        @media (min-width: 1000px) {
+            .blog-grid-2, .blog-grid-1 {
+                margin-bottom: 40px;
+            }
+            .feature .text-part {
+                max-height: 210px;
+                overflow: hidden;
+                margin-right: 0 !important;
+                margin-bottom: 0 !important;
+            }
+            .single-page #avatar-pos-main-body {
+                margin: 0;
+            }
+            .single-page #avatar-pos-main-body article {
+                padding: 0;
+            }
+            .row.feature .text-part {
+                max-height: 173px;
+            }
+            .feature .text-part .title{
+                line-height: 26px !important;
+            }
+            .feature .text-part .description {
+                line-height: 27px !important;
+
+            }
+        }
+
+        @media (max-width: 1000px) {
+            #subscribe-modal .st-sc-shortcode form {
+                height: 0;
+                margin-bottom: 135px !important;
+            }
+            #subscribe-modal {
+                background-position: 0 0, 0 100%, -3px 0, 100% 0px !important;
+            }
+        }
+
+    </style>
+    <script src="./Top 7 algorithms and DS every programmer should know_files/embed.js" data-timestamp="1504722327274"></script><script async="" type="text/javascript" src="./Top 7 algorithms and DS every programmer should know_files/count.js"></script><script id="omapi-script" src="./Top 7 algorithms and DS every programmer should know_files/api.min.js" async=""></script><link rel="preload" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.83b5b8f9aa16033ab1cb9cb54bf59140.css"><link rel="preload" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.8acee1de90e869efdb244e45c7f66630.js"><link rel="preload" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.9becee0326ce4d1840f8985f1dc0ce21.js"><link rel="preload" as="script" href="https://disqus.com/next/config.js"><script src="./Top 7 algorithms and DS every programmer should know_files/alfalfa.4a5fcca1fe50a757044dfd331b660625.js" async="" charset="UTF-8"></script></head>
+<body class="post-template-default single single-post postid-1151 single-format-standard group-blog" data-gr-c-s-loaded="true" style="">
+<header class="blog-header">
+    <div class="container khuggy">
+        <nav class="col-md-12" style="margin: 0 auto;float: none;padding-left: 5px !important;">
+            <div class="navbar-header col-md-3 col-xs-5">
+                <a class="" href="http://www.blog.hackerearth.com/"><img src="./Top 7 algorithms and DS every programmer should know_files/hite.png" alt="logo"></a>
+
+            </div>
+            <div class="col-md-5 header-search-form hidden-sm hidden-xs">
+            </div>
+            <div class="col-md-4 col-xs-6 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a target="_blank" class="" href="https://www.hackerearth.com/?utm_source=Blog&amp;utm_medium=Header&amp;utm_campaign=Link">Be a better programmer</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<section class="category-header navbar navbar-static-top" role="navigation">
+    <div class="container category-menu">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="navbar-header">
+                    <a class="hidden-md hidden-lg hidden-sm" href="javascript:void(0)" style="margin-left: 0px;"><h3>Categories</h3></a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#st-theme-main-menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <nav class="site-navigation primary-navigation st-main-menu collapse navbar-collapse" id="st-theme-main-menu">
+                    <div class="st-theme-menu-wrapper">
+                        <div class="menu-menu-1-container">
+                            <div class="nav-menu"><ul id="menu-blog-category-menu" class="menu"><li id="menu-item-13762" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13762"><a href="http://blog.hackerearth.com/innovation-management">Innovation Management</a></li>
+<li id="menu-item-13763" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13763"><a href="http://blog.hackerearth.com/talent-assessment">Talent Management</a></li>
+<li id="menu-item-13760" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13760"><a href="http://blog.hackerearth.com/case-studies">Case studies</a></li>
+<li id="menu-item-4803" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4803"><a href="http://blog.hackerearth.com/machine-learning">Machine Learning</a></li>
+<li id="menu-item-13764" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13764"><a href="http://blog.hackerearth.com/webinar">Webinars</a></li>
+</ul></div>                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section><section class="single-page" id="post-1151">
+    <div class="container">
+        <div class="row single-page-content">
+            
+                
+    
+
+<div id="subscribe-modal-2" class="modal fade" role="dialog" style="display: none;">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <button style="position: absolute;right: 15px;top: 7px;font-size: 40px;z-index: 1111;" type="button" class="close" data-dismiss="modal">×</button>
+            <img src="./Top 7 algorithms and DS every programmer should know_files/hackerearth-subscribe.jpg">
+            <div class="modal-detail">
+                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    <div>
+            <h2 class="hide-for-sub">Do Algorithms Fascinate You?</h2>
+    
+            <p class="hide-for-sub">while (True) { "Click Subscribe" } - Get new algorithms, hacks &amp; tutorials right in your inbox.</p>
+    
+            <div class="st-sc-shortcode st-sc-text  st-theme-shortcode-a" style="background-image:url(http://blog.hackerearth.com/wp-content/uploads/2016/09/Side-Scroller-V2.png);">
+            
+
+                            <h3 class="st-sc-title"><span style="color: #fff;">Get More Stuff</span></h3>
+                <div class="st-sc-content">
+                    <div>
+                        <div class="widget_wysija_cont shortcode_wysija">
+                            <div id="msg-form-wysija-shortcode576390ef6c1f8-1" class="wysija-msg ajax">
+                            </div>
+                            <form id="form-wysija-shortcode576390ef6c1f8-1" method="post" role="form" class="widget_wysija shortcode_wysija">
+
+                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                                <span class="hidden">Subscribe now to get the latest updates from the developer community in your inbox!</span>
+                                <p class="wysija-paragraph">
+                                    <input type="text" id="stc-email" class="wysija-input" placeholder="Email" name="stc_email" value="">
+                                    <input type="hidden" id="stc-postlink" class="wysija-input" name="stc_categories[]" value="">
+                                </p>
+                                <div style="display: none;" class="stc-categories">
+                                                                                                                    <div class="stc-categories-checkboxes">
+                                                                                            <input type="hidden" name="stc_categories[]" value="157">
+                                                                                    </div><!-- .stc-categories-checkboxes -->
+                                                                    </div><!-- .stc-categories -->
+                                <input type="hidden" name="action" value="stc_subscribe_me">
+                                <input type="hidden" id="stc_nonce" name="stc_nonce" value="ae6dd6e16c"><input type="hidden" name="_wp_http_referer" value="/2015/05/top-7-algorithms-and-data-structures-every-programmer-should-know-about.html">                                <input id="stc-subscribe-btn" type="submit" class="wysija-submit wysija-submit-field" value="Subscribe Now">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+
+  		</div>
+
+<!---->
+<!--<script type="text/javascript">-->
+<!--    jQuery( window ).load(function() {-->
+<!--        if(jQuery('body').hasClass('postid-1899')){-->
+<!--            setTimeout(function(){-->
+<!--//               jQuery('.open-modal')[0].click();-->
+<!--            }, 30000);-->
+<!--        }-->
+<!--    });-->
+<!---->
+<!--</script>-->
+
+    <script>
+        function createCookie(name,value,days) {
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime()+(days*24*60*60*1000));
+                var expires = "; expires="+date.toGMTString();
+            }
+            else var expires = "";
+            document.cookie = name+"="+value+expires+"; path=/";
+        }
+
+        function readCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0;i < ca.length;i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+            }
+            return null;
+        }
+
+        function eraseCookie(name) {
+            createCookie(name,"",-1);
+        }
+
+        function checkCookie(name)
+        {
+            return readCookie(name) != null;
+        }
+
+        if(checkCookie("XYZ1")) {
+            createCookie("XYZ1","SMURF",1);
+//        document.write("reset cookie");
+        }
+        else {
+            if($(window).width() > 600){
+                setTimeout(function(){
+                    $('#subscribe-2').trigger('click');
+                }, 30000);
+            }
+            createCookie("XYZ1","SMURF",1);
+            readCookie("XYZ1")
+        }
+    </script>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #subscribe-modal-2 .modal-detail {
+        position: absolute;
+        top:0;
+        left:0;
+        right: 0;
+        margin: 14px;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #subscribe-modal-2 .modal-detail h2 {
+        font-size: 30px;
+        color: #58595b;
+        text-align: center;
+        margin: 0 0 31px;
+    }
+    #subscribe-modal-2 .modal-detail p {
+        font-size: 20px;
+        text-align: center;
+        color: #58595b;
+    }
+    #subscribe-modal-2 .modal-detail >p {
+        min-height: 60px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    #subscribe-modal-2 {
+        position: absolute;
+        display: none;
+        z-index: 111111;
+        margin: 0 auto;
+        padding: 0;
+        width: 100% !important;
+        max-width: 100%;
+        height: 666px;
+        background: none;
+        box-shadow: none;
+    }
+    #subscribe-modal-2 .modal-dialog {
+        padding: 0;
+        width: 100%;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        max-width: 700px !important;
+        margin: 0 auto !important;
+    }
+    #subscribe-modal-2 h3 {
+        display: none;
+    }
+    #subscribe-modal-2 .st-sc-shortcode {
+        background: #fff !important;
+        margin: 50px 0;
+        padding: 0;
+        height: 0;
+    }
+    #subscribe-modal-2 .st-sc-shortcode form {
+        background: #fff;
+        width: 600px;
+        margin: 0 auto;
+    }
+    #subscribe-modal-2 .st-sc-shortcode form .wysija-paragraph{
+        width: 60%;
+        float: left;
+    }
+    #subscribe-modal-2 .st-sc-shortcode form .wysija-paragraph input{
+        margin: 0;
+        height: 46px;
+    }
+    #subscribe-modal-2 #widget_wysija_cont#shortcode_wysija {
+        background: #fff;
+    }
+    #subscribe-modal-2 #stc-subscribe-btn {
+        width: 38%;
+        height: 46px;
+        font-size: 17px;
+    }
+    #subscribe-modal-2  .st-sc-content {
+        background: #fff;
+    }
+    #subscribe-modal-2 .modal-content img {
+        min-height: 318px;
+    }
+</style>
+    <div id="avatar-body-middle-block" class=" has-right-col">
+        <div class="avatar-wrapper block-default-width">
+            <div id="avatar-content" class="pull-left col-md-10">
+                <div id="avatar-main-content">
+                    <div id="avatar-main-content-inner">
+                        <div id="avatar-pos-main-body">
+                            <div id="main-content" class="main-content">
+                                <div id="primary" class="content-area">
+                                    <div id="content" class="site-content" role="main">
+                                        <article id="post-483" class="post-483 post type-post status-publish format-standard has-post-thumbnail hentry category-style tag-music has-read-more">
+
+                                            <div class="entry-content">
+                                                <header class="entry-header">
+                                                    <h1 class="entry-title" style="font-weight: 400">
+                                                        Top 7 algorithms and data structures every programmer should know about                                                    </h1>
+                                                    <div class="entry-meta">
+                                                        <button type="button" class="btn btn-info btn-lg hidden" data-toggle="modal" data-target="#subscribe-modal">Open Modal</button>
+                                                        <button type="button" class="btn btn-info btn-lg hidden" id="subscribe-2" data-toggle="modal" data-target="#subscribe-modal-2">Open Modal</button>
+                                                        <div class="category-block">
+                                                                                                                                                                                                                                                        <a class="cat-link" href="http://blog.hackerearth.com/algorithms"><span class="category st-theme-category-color-5 st-theme-category-background-color-5" style="color: #4c9cdf !important;">Algorithms</span></a>
+                                                                                                                    </div>
+                                                                                                                    <div class="date"><i class="fa fa-clock-o"></i>May 4, 2015</div>
+                                                                                                            </div>
+                                                    <div class="st-theme-thumbnail-wrapper">
+                                                        <div class="post-thumbnail">
+                                                                                                                            <img src="./Top 7 algorithms and DS every programmer should know_files/top7algo_poster.png" width="100%" class=" wp-post-image">
+                                                                                                                        
+                                                                                                                    </div>
+                                                    </div>
+                                                </header>
+
+                                                <div class="nc_socialPanel swp_flatFresh swp_d_fullColor swp_i_fullColor swp_o_fullColor scale-100 scale-fullWidth" data-position="below" data-float="floatNone" data-count="4" data-floatcolor="#ffffff" data-emphasize="0"><div class="nc_tweetContainer googlePlus" data-id="1" data-network="google_plus"><a rel="nofollow" target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fblog.hackerearth.com%2F2015%2F05%2Ftop-7-algorithms-and-data-structures-every-programmer-should-know-about.html" data-link="https://plus.google.com/share?url=http%3A%2F%2Fblog.hackerearth.com%2F2015%2F05%2Ftop-7-algorithms-and-data-structures-every-programmer-should-know-about.html" class="nc_tweet"><span class="iconFiller"><span class="spaceManWilly"><i class="sw sw-google-plus fa fa-google-plus"></i></span></span><span class="swp_count">86</span></a></div><div class="nc_tweetContainer twitter" data-id="2" data-network="twitter"><a rel="nofollow" target="_blank" href="https://twitter.com/share?original_referer=/&amp;text=Top+7+algorithms+and+data+structures+every+programmer+should+know+about&amp;url=http://blog.hackerearth.com/2015/05/top-7-algorithms-and-data-structures-every-programmer-should-know-about.html&amp;via=https://twitter.com/raviojha21" data-link="https://twitter.com/share?original_referer=/&amp;text=Top+7+algorithms+and+data+structures+every+programmer+should+know+about&amp;url=http://blog.hackerearth.com/2015/05/top-7-algorithms-and-data-structures-every-programmer-should-know-about.html&amp;via=https://twitter.com/raviojha21" class="nc_tweet"><span class="swp_count swp_hide"><span class="iconFiller"><span class="spaceManWilly"><i class="fa fa-twitter"></i></span></span></span></a></div><div class="nc_tweetContainer swp_fb" data-id="3" data-network="facebook"><a rel="nofollow" target="_blank" href="http://www.facebook.com/share.php?u=http%3A%2F%2Fblog.hackerearth.com%2F2015%2F05%2Ftop-7-algorithms-and-data-structures-every-programmer-should-know-about.html" data-link="http://www.facebook.com/share.php?u=http%3A%2F%2Fblog.hackerearth.com%2F2015%2F05%2Ftop-7-algorithms-and-data-structures-every-programmer-should-know-about.html" class="nc_tweet"><span class="iconFiller"><span class="spaceManWilly"><i class="sw sw-facebook fa fa-facebook"></i></span></span><span class="swp_count">3K</span></a></div><div class="nc_tweetContainer linkedIn" data-id="4" data-network="linked_in"><a rel="nofollow" target="_blank" href="https://www.linkedin.com/cws/share?url=http%3A%2F%2Fblog.hackerearth.com%2F2015%2F05%2Ftop-7-algorithms-and-data-structures-every-programmer-should-know-about.html" data-link="https://www.linkedin.com/cws/share?url=http%3A%2F%2Fblog.hackerearth.com%2F2015%2F05%2Ftop-7-algorithms-and-data-structures-every-programmer-should-know-about.html" class="nc_tweet"><span class="iconFiller"><span class="spaceManWilly"><i class="sw sw-linkedin fa fa-linkedin"></i></span></span><span class="swp_count">392</span></a></div></div><div class="swp-content-locator"></div>                                                <p>Coming from the background of Competitive Programming and Software Development, I have compiled a list of algorithms and data structures that every programmer should know about. We will see what they do and where they are used with simple examples. This list is prepared to keep in mind their use in competitive programming and current development practices.</p><p>Here are the Top 7 algorithms and data structures to know:</p><ul><li><strong>Sort algorithms</strong></li>
+<li><strong>Search algorithms</strong></li>
+<li><strong>Hashing</strong></li>
+<li><strong>Dynamic programming</strong></li>
+<li><strong>Exponentiation by squaring</strong></li>
+<li><strong>String matching and parsing</strong></li>
+<li><strong>Primality testing algorithm</strong></li>
+</ul><p><b> 1. Sort Algorithms</b></p><p>Sorting is the most heavily studied concept in Computer Science. Idea is to arrange the items of a list in a specific order. Though every major programming language has built-in sorting libraries, it comes in handy if you know how they work. Depending on the requirement, you may want to use any of these.</p><ul><li><span style="color: #3366ff;"><a style="color: #3366ff;" href="https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/tutorial/">Merge Sort</a></span></li>
+<li><span style="color: #3366ff;"><a style="color: #3366ff;" href="https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/tutorial/">Quick Sort</a></span></li>
+<li><span style="color: #3366ff;"><a style="color: #3366ff;" href="https://www.hackerearth.com/practice/algorithms/sorting/bucket-sort/tutorial/">Bucket Sort</a></span></li>
+<li><span style="color: #3366ff;"><a style="color: #3366ff;" href="https://www.hackerearth.com/practice/algorithms/sorting/heap-sort/tutorial/">Heap Sort</a></span></li>
+<li><span style="color: #3366ff;"><a style="color: #3366ff;" href="https://www.hackerearth.com/practice/algorithms/sorting/counting-sort/tutorial/">Counting Sort</a></span></li>
+</ul><p>More importantly, you should know<span style="color: #3366ff;"> <a style="color: #3366ff;" href="http://stackoverflow.com/questions/1933759/when-is-each-sorting-algorithm-used">when and where to use</a></span> them. Some examples where you can find a direct application of sorting techniques include:</p><ul><li>Sorting by price, popularity, etc. in e-commerce websites</li>
+<li>Sorting by score in HackerEarth contest <span style="color: #3366ff;"><a style="color: #3366ff;" href="https://www.hackerearth.com/awesome-april-15/hof/">leaderboard</a></span></li>
+</ul><p><b> 2. Search Algorithms</b></p><p><span style="color: #3366ff;"><em><a style="color: #3366ff;" href="https://www.hackerearth.com/practice/algorithms/searching/binary-search/tutorial/">Binary Search</a></em></span> (in linear data structures) - Binary search is used to perform a very efficient search on sorted dataset. The time complexity is O(log<sub>2</sub>N). The idea is to repeatedly divide in half the portion of the list that could contain the item until we narrow it down to one possible item. Some applications are:</p><ul><li>When you search for a name of the song in a sorted list of songs, it performs binary search and string-matching to quickly return the results.</li>
+<li>Used to debug in git through <span style="color: #3366ff;"><a style="color: #3366ff;" href="http://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#Binary-Search">git bisect</a></span></li>
+</ul><p><span style="color: #3366ff;"><em><a style="color: #3366ff;" href="https://www.hackerearth.com/practice/notes/graph-theory-part-i/">Depth/Breadth First Search</a> </em></span>(in Graph data structures)</p><p>DFS and BFS are tree/graph traversing and searching data structures. We wouldn't go deep into <span style="color: #3366ff;"><a style="color: #3366ff;" href="https://codeaccepted.wordpress.com/2014/04/08/depth-and-breadth-first-search/">how DFS/BFS work</a></span> but will see how they are different through the following animation.<a href="http://i1.wp.com/blog.hackerearth.com/wp-content/uploads/2015/05/dfsbfs_animation_final.gif"><img class="aligncenter wp-image-1152 size-full" src="./Top 7 algorithms and DS every programmer should know_files/dfsbfs_animation_final.gif" alt="DFS BFS example animation" data-recalc-dims="1"></a>Applications:</p><ul><li>Used by search engines for web-crawling</li>
+<li>Used in artificial intelligence to build bots, for instance, a chess bot</li>
+<li>Finding shortest path between two cities in a map and many other such applications</li>
+</ul><p><b> 3. Hashing</b></p><p>Hash lookup is currently the most widely used technique to find appropriate data by key or ID. We access data by its index. Previously we relied on Sorting+Binary Search to look for index whereas now we use hashing.</p><p>The data structure is referred as Hash-Map or <span style="color: #3366ff;"><a style="color: #3366ff;" href="https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/tutorial/">Hash-Table</a></span> or Dictionary that maps keys to values, efficiently. We can perform value lookups using keys. Idea is to use an appropriate hash function which does the key -&gt; value mapping. Choosing a good hash function depends on the scenario.</p><p>Applications:</p><ul><li>In routers, to store IP address -&gt; Path pair for routing mechanisms</li>
+<li>To perform the check if a value already exists in a list. Linear search would be expensive. We can also use Set data structure for this operation.</li>
+</ul><p><b> 4. Dynamic Programming</b></p><p>Dynamic programming (DP) is a method for solving a complex problem by breaking it down into simpler subproblems. We solve the subproblems, remember their results and using them we make our way to solving the complex problem, quickly.</p><p>I cannot help but quote this <span style="color: #3366ff;"><a style="color: #3366ff;" href="https://www.quora.com/How-should-I-explain-dynamic-programming-to-a-4-year-old/answer/Jonathan-Paulson">answer on Quora</a></span> to explain DP in layman terms.</p><p><i>*writes down "1+1+1+1+1+1+1+1 =" on a sheet of paper* What's that equal to?</i><br><i>*counting* Eight!</i><br><i>*writes down another "1+" on the left* What about that?</i><br><i>*quickly* Nine!</i><br><i>How'd you know it was nine so fast?</i><br><i>You just added one more</i><br><i>So you didn't need to recount because you remembered there were eight! Dynamic Programming is just a fancy way to say 'remembering stuff to save time later'</i></p><p>Applications:</p><ul><li>There are many DP <span style="color: #3366ff;"><a style="color: #3366ff;" href="http://en.wikiversity.org/wiki/Topic:Dynamic_programming">algorithms</a></span> and <span style="color: #3366ff;"><a style="color: #3366ff;" href="https://www.quora.com/What-are-some-real-world-problems-that-have-been-solved-with-dynamic-programming">applications</a></span> but I'd name one and blow you away, Duckworth-Lewis method in cricket.</li>
+</ul><p><b> 5. Exponentiation by squaring</b></p><p>Say you want to calculate 2<sup>32</sup>. Normally we'd iterate 32 times and find the result. What if I told you it can be done in 5 iterations?</p><p>Exponentiation by squaring or <span style="color: #3366ff;"><a style="color: #3366ff;" href="https://www.hackerearth.com/notes/mod-integer-exponentiation-useful-in-competetive-programming/">Binary exponentiation</a></span> is a general method for fast computation of large positive integer powers of a number in O(log<sub>2</sub>N). Not only this, the method is also used for computation of powers of polynomials and square matrices.</p><p>Application:</p><ul><li>Calculation of large powers of a number is mostly required in RSA encryption. RSA also uses modular arithmetic along with binary exponentiation.</li>
+</ul><p><b> 6. String Matching and Parsing</b></p><p>Pattern matching/searching is one of the most important problems in Computer Science. There have been a lot of research on the topic but we'll enlist only two basic necessities for any programmer.</p><ul><li>KMP Algorithm (String Matching)</li>
+</ul><p>Knuth-Morris-Pratt algorithm is used in cases where we have to match a short pattern in a long string. For instance, when we Ctrl+F a keyword in a document, we perform pattern matching in the whole document.</p><ul><li>Regular Expression (String Parsing)</li>
+</ul><p>Many times we have to validate a string by parsing over a predefined restriction. It is heavily used in web development for URL parsing and matching.</p><p><b style="line-height: 1.5;">7. Primality Testing Algorithms</b></p><p>There are deterministic and probabilistic ways of determining whether a given number is prime or not. We’ll see both deterministic and probabilistic (nondeterministic) ways.</p><ul><li>Sieve of Eratosthenes (deterministic)</li>
+</ul><p>If we have a certain limit on the range of numbers, say determine all primes within range 100 to 1000 then Sieve is a way to go. The length of the range is a crucial factor because we have to allocate a certain amount of memory according to the range.</p><p><em>For any number n, incrementally testing up to sqrt(n) (deterministic)</em></p><p>In case you want to check for few numbers which are sparsely spread over a long range (say 1 to 10<sup>12</sup>), Sieve won't be able to allocate enough memory. You can check for each number n by traversing only up to sqrt(n) and perform a divisibility check on n.</p><ul><li>Fermat primality test and Miller–Rabin primality test (both are nondeterministic)</li>
+</ul><p>Both of these are compositeness tests. If a number is proved to be composite, then it sure isn’t a prime number. Miller-Rabin is a more sophisticated one than Fermat’s. In fact, Miller-Rabin also has a deterministic variant, but then it's a game of trade between time complexity and accuracy of the algorithm.</p><p>Application:</p><ul><li>The single most important use of prime numbers is in Cryptography. More precisely, they are used in encryption and decryption in RSA algorithm which was the very first implementation of Public Key Cryptosystems</li>
+<li>Another use is in Hash functions used in Hash Tables</li>
+</ul><p>We'll discuss some advanced algorithms every competitive programmer should know in the next post. Meanwhile, master the above algorithms or share in the comments about what you think every beginner-intermediate programmer should know.</p><p>Till next time. <span style="color: #3366ff;"><a style="color: #3366ff;" href="http://en.wiktionary.org/wiki/evviva#Descendants">Evíva</a></span>!</p><div class="tptn_counter" id="tptn_counter_1151"><script type="text/javascript" data-cfasync="false" src="./Top 7 algorithms and DS every programmer should know_files/saved_resource"></script></div>
+<hr>
+<p>
+  <em>
+  Also published on <a href="https://medium.com/@hackerearth/top-7-algorithms-and-data-structures-every-programmer-should-know-about-74a61e011940">Medium</a>.  </em>
+</p>
+<div class="nc_socialPanel swp_flatFresh swp_d_fullColor swp_i_fullColor swp_o_fullColor scale-100 scale-fullWidth" data-position="below" data-float="floatNone" data-count="4" data-floatcolor="#ffffff" data-emphasize="0"><div class="nc_tweetContainer googlePlus" data-id="1" data-network="google_plus"><a rel="nofollow" target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fblog.hackerearth.com%2F2015%2F05%2Ftop-7-algorithms-and-data-structures-every-programmer-should-know-about.html" data-link="https://plus.google.com/share?url=http%3A%2F%2Fblog.hackerearth.com%2F2015%2F05%2Ftop-7-algorithms-and-data-structures-every-programmer-should-know-about.html" class="nc_tweet"><span class="iconFiller"><span class="spaceManWilly"><i class="sw sw-google-plus fa fa-google-plus"></i></span></span><span class="swp_count">86</span></a></div><div class="nc_tweetContainer twitter" data-id="2" data-network="twitter"><a rel="nofollow" target="_blank" href="https://twitter.com/share?original_referer=/&amp;text=Top+7+algorithms+and+data+structures+every+programmer+should+know+about&amp;url=http://blog.hackerearth.com/2015/05/top-7-algorithms-and-data-structures-every-programmer-should-know-about.html&amp;via=https://twitter.com/raviojha21" data-link="https://twitter.com/share?original_referer=/&amp;text=Top+7+algorithms+and+data+structures+every+programmer+should+know+about&amp;url=http://blog.hackerearth.com/2015/05/top-7-algorithms-and-data-structures-every-programmer-should-know-about.html&amp;via=https://twitter.com/raviojha21" class="nc_tweet"><span class="swp_count swp_hide"><span class="iconFiller"><span class="spaceManWilly"><i class="fa fa-twitter"></i></span></span></span></a></div><div class="nc_tweetContainer swp_fb" data-id="3" data-network="facebook"><a rel="nofollow" target="_blank" href="http://www.facebook.com/share.php?u=http%3A%2F%2Fblog.hackerearth.com%2F2015%2F05%2Ftop-7-algorithms-and-data-structures-every-programmer-should-know-about.html" data-link="http://www.facebook.com/share.php?u=http%3A%2F%2Fblog.hackerearth.com%2F2015%2F05%2Ftop-7-algorithms-and-data-structures-every-programmer-should-know-about.html" class="nc_tweet"><span class="iconFiller"><span class="spaceManWilly"><i class="sw sw-facebook fa fa-facebook"></i></span></span><span class="swp_count">3K</span></a></div><div class="nc_tweetContainer linkedIn" data-id="4" data-network="linked_in"><a rel="nofollow" target="_blank" href="https://www.linkedin.com/cws/share?url=http%3A%2F%2Fblog.hackerearth.com%2F2015%2F05%2Ftop-7-algorithms-and-data-structures-every-programmer-should-know-about.html" data-link="https://www.linkedin.com/cws/share?url=http%3A%2F%2Fblog.hackerearth.com%2F2015%2F05%2Ftop-7-algorithms-and-data-structures-every-programmer-should-know-about.html" class="nc_tweet"><span class="iconFiller"><span class="spaceManWilly"><i class="sw sw-linkedin fa fa-linkedin"></i></span></span><span class="swp_count">392</span></a></div></div><div class="swp-content-locator"></div>                                            </div>
+                                                                                        <h3 class="st-sc-title" style="margin-top: 50px;"><span>About the Author</span></h3>
+                                            <div class="st-theme-author-intro ">
+                                                <div class="content clearfix">
+                                                    <div class="image">
+                                                        <img src="./Top 7 algorithms and DS every programmer should know_files/Ravi-Ojha.jpg" width="96" height="96" alt="Ravi Ojha" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo">                                                    </div>
+                                                    <div class="name" style="color: #888">
+                                                        <a href="http://blog.hackerearth.com/author/ravi?post">Ravi Ojha</a>
+                                                                                                                                                                            <ul class="list-inline social">
+                                                                                                                                    <li>
+                                                                        <a href="https://www.facebook.com/raviojha21" target="_blank">
+                                                                            <i class="fa fa-facebook"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                    <li>
+                                                                        <a href="https://twitter.com/raviojha21" target="_blank">
+                                                                            <i class="fa fa-twitter"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                    <li>
+                                                                        <a href="https://www.linkedin.com/in/raviojha" target="_blank">
+                                                                            <i class="fa fa-linkedin"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                                                                                                    <li>
+                                                                        <a href="mailto:%20ivarojha@gmail.com">
+                                                                            <i class="fa fa-envelope"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                                                                            </ul>
+                                                                                                            </div>
+                                                    <div class="desc" style="display: table;">
+                                                        Ravi Ojha is a Software Engineer at HackerEarth. He writes about software philosophy, competitive programming and personal experiences in general. More about him? <a class="vglnk" href="http://rookieslab.com/about" rel="nofollow"><span>http</span><span>://</span><span>rookieslab</span><span>.</span><span>com</span><span>/</span><span>about</span></a>                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="st-theme-author-posts" style="margin-top: 50px;">
+                                                <div data-id="1457331601" data-name="Author Posts" class="st-sc-template-page  ">
+                                                    <div class="" style="background-position: center; background-repeat: no-repeat; background-size: cover;margin: 0 -10px;">
+                                                        <div class="row-inner">
+                                                            <div>
+                                                                <div class="container-fluid">
+                                                                    <div class="st-columns-row row">
+                                                                        <div class="st-columns-column col-lg-12 undefined undefined undefined undefined undefined undefined" style="padding: 0 10px;">
+                                                                            <div id="st-sc-contentgrid577a423cb78d0" class="st-sc-shortcode st-sc-contentgrid  st-theme-list-posts-d layout-1">
+                                                                                <h3 class="st-sc-title"><span>Author Post</span></h3>
+                                                                                <div class="st-sc-content">
+                                                                                    <div class="list-items">
+                                                                                        <div class="list-items-inner">
+                                                                                            <div class="container-fluid author-post">
+                                                                                                <div class="row author-post-row-owl hidden">
+                                                                                                    <div class="owl-carousel owl-theme">
+                                                                                                                                                                                                                                                                                                                                    <div class="item">
+                                                                                                                    <div class="inner">
+                                                                                                                        <div class="media" style="height: auto !important;">
+                                                                                                                                                                                                                                                            <a href="http://blog.hackerearth.com/how-to-apply-for-software-engineering-internships-at-startups">
+                                                                                                                                    <img src="./Top 7 algorithms and DS every programmer should know_files/internships_blog_2.jpg" style="height: auto !important;">
+                                                                                                                                </a>
+                                                                                                                                                                                                                                                    </div>
+                                                                                                                        <div class="info" style="background-color: #fff">
+                                                                                                                            <div class="category world st-theme-category-color-5 st-theme-category-background-color-5" style="display: inline;background-color:#fff;">
+                                                                                                                                                                                                                                                                                                                                                                                                    <a href="http://blog.hackerearth.com/developer-tips">Developer Tips</a>
+                                                                                                                                                                                                                                                                    <a href="http://blog.hackerearth.com/placements">Placements</a>
+                                                                                                                                                                                                                                                            </div>
+                                                                                                                            <a class="title-link" href="http://blog.hackerearth.com/how-to-apply-for-software-engineering-internships-at-startups">
+                                                                                                                                <h3 class="title">How to apply for Software Engineering Internships at startups? </h3>
+                                                                                                                            </a>
+                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                        <div class="date-category">
+                                                                                                                                <div class="date">
+                                                                                                                                                                                                                                                                        Mar 18, 2017                                                                                                                                </div>
+
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                                                                                                                                <div class="item">
+                                                                                                                    <div class="inner">
+                                                                                                                        <div class="media" style="height: auto !important;">
+                                                                                                                                                                                                                                                            <a href="http://blog.hackerearth.com/2015/05/top-7-algorithms-and-data-structures-every-programmer-should-know-about.html">
+                                                                                                                                    <img src="./Top 7 algorithms and DS every programmer should know_files/top7algo_poster.png" style="height: auto !important;">
+                                                                                                                                </a>
+                                                                                                                                                                                                                                                    </div>
+                                                                                                                        <div class="info" style="background-color: #fff">
+                                                                                                                            <div class="category world st-theme-category-color-5 st-theme-category-background-color-5" style="display: inline;background-color:#fff;">
+                                                                                                                                                                                                                                                                                                                                                                                                    <a href="http://blog.hackerearth.com/algorithms">Algorithms</a>
+                                                                                                                                                                                                                                                            </div>
+                                                                                                                            <a class="title-link" href="http://blog.hackerearth.com/2015/05/top-7-algorithms-and-data-structures-every-programmer-should-know-about.html">
+                                                                                                                                <h3 class="title">Top 7 algorithms and data structures every programmer should know about </h3>
+                                                                                                                            </a>
+                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                        <div class="date-category">
+                                                                                                                                <div class="date">
+                                                                                                                                                                                                                                                                        May 4, 2015                                                                                                                                </div>
+
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                                                                                                                    </div>
+                                                                                                    <style>
+                                                                                                        .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+                                                                                                            display: block !important;
+                                                                                                        }
+                                                                                                    </style>
+
+                                                                                                </div>
+                                                                                                <div class="row author-post-row" style="display: flex;flex-flow: wrap;">
+                                                                                                                                                                                                                                                                                                                        <div class="cols col-xs-12 col-sm-6 col-md-4 col-xxs-12">
+                                                                                                                <div class="inner">
+                                                                                                                    <div class="media" style="height: auto !important;">
+                                                                                                                                                                                                                                                    <a href="http://blog.hackerearth.com/how-to-apply-for-software-engineering-internships-at-startups">
+                                                                                                                                <img src="./Top 7 algorithms and DS every programmer should know_files/internships_blog_2.jpg" style="height: auto !important;">
+                                                                                                                            </a>
+                                                                                                                                                                                                                                            </div>
+                                                                                                                    <div class="info" style="background-color: #fff">
+                                                                                                                        <div class="category world st-theme-category-color-5 st-theme-category-background-color-5" style="display: inline;background-color:#fff;">
+                                                                                                                                                                                                                                                                                                                                                                                        <a href="http://blog.hackerearth.com/developer-tips">Developer Tips</a>
+                                                                                                                                                                                                                                                            <a href="http://blog.hackerearth.com/placements">Placements</a>
+                                                                                                                            
+                                                                                                                                </div>
+                                                                                                                        <a class="title-link" href="http://blog.hackerearth.com/how-to-apply-for-software-engineering-internships-at-startups">
+                                                                                                                            <h3 class="title">How to apply for Software Engineering Internships at startups?</h3>
+                                                                                                                        </a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                    <div class="date-category">
+                                                                                                                            <div class="date">
+                                                                                                                                                                                                                                                                Mar 18, 2017                                                                                                                            </div>
+                                                                                                                
+                                                                                                                        </div>
+
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                                                                                                                                        <div class="cols col-xs-12 col-sm-6 col-md-4 col-xxs-12">
+                                                                                                                <div class="inner">
+                                                                                                                    <div class="media" style="height: auto !important;">
+                                                                                                                                                                                                                                                    <a href="http://blog.hackerearth.com/2015/05/top-7-algorithms-and-data-structures-every-programmer-should-know-about.html">
+                                                                                                                                <img src="./Top 7 algorithms and DS every programmer should know_files/top7algo_poster.png" style="height: auto !important;">
+                                                                                                                            </a>
+                                                                                                                                                                                                                                            </div>
+                                                                                                                    <div class="info" style="background-color: #fff">
+                                                                                                                        <div class="category world st-theme-category-color-5 st-theme-category-background-color-5" style="display: inline;background-color:#fff;">
+                                                                                                                                                                                                                                                                                                                                                                                        <a href="http://blog.hackerearth.com/algorithms">Algorithms</a>
+                                                                                                                            
+                                                                                                                                </div>
+                                                                                                                        <a class="title-link" href="http://blog.hackerearth.com/2015/05/top-7-algorithms-and-data-structures-every-programmer-should-know-about.html">
+                                                                                                                            <h3 class="title">Top 7 algorithms and data structures every programmer should know about</h3>
+                                                                                                                        </a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                    <div class="date-category">
+                                                                                                                            <div class="date">
+                                                                                                                                                                                                                                                                May 4, 2015                                                                                                                            </div>
+                                                                                                                
+                                                                                                                        </div>
+
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                                                                                                                            </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="st-theme-social-header floating-social-media">
+<!--                                                -->                                            </div>
+                                                                                    </article>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="clearbreak"></div>
+            </div>
+            
+
+
+        </div>
+    </div>
+
+                <div class="nav-and-comment col-md-10" style="clear: both;overflow: hidden;">
+
+                    <div id="disqus_thread"><iframe id="dsq-app6361" name="dsq-app6361" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./Top 7 algorithms and DS every programmer should know_files/saved_resource.html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 386px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//HackerEarth.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the &lt;a href="<a class="vglnk" href="https://disqus.com/?ref_noscript" rel="nofollow"><span>https</span><span>://</span><span>disqus</span><span>.</span><span>com</span><span>/?</span><span>ref</span><span>_</span><span>noscript</span></a>" rel="nofollow"&gt;comments powered by Disqus.&lt;/a&gt;</noscript>
+                </div>
+
+
+                    </div>
+    </div>
+</section>
+
+                                
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <style>
+        .scroll-pop-close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: transparent !important;
+            font-size: 22px;
+            display: table;
+            padding: 5px 15px !important;
+            margin: 0 auto;
+            font-weight: 400;
+            color: #ddd;
+            z-index: 111111;
+            cursor: pointer;
+        }
+        .scroll-pop {
+            position: fixed;
+            height: 250px;
+            width: 210px;
+            right: 0;
+            bottom: -350px;
+            z-index: 1111;
+            transition: all 0.5s linear 0.5s;
+            box-shadow: 0px 0px 8px #ccc;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            overflow: hidden;
+            margin-right: 7px;
+        }
+        .scroll-pop a:active, .scroll-pop a:focus, .scroll-pop a:visited {
+            text-decoration: none !important;
+        }
+        .scroll-pop-background {
+            height: 250px;
+            width: 210px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 15px;
+            display: block;
+        }
+        .scroll-pop .hack-img {
+            width: 130px;
+            margin: 0 auto 0;
+            display: table;
+            padding-top: 10px;
+        }
+        .scroll-pop h2 {
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            margin: 15px 0;
+        }
+        .scroll-pop p {
+            color: #fff;
+            text-align: center;
+            font-size: 15px;
+            margin: 10px 0 25px;
+        }
+        .scroll-pop span {
+            background-color: #9c0;
+            font-size: 17px;
+            display: table;
+            padding: 10px 20px;
+            margin: 0 auto;
+            font-weight: 400;
+            color: #fff;
+        }
+        /*.scroll-pop a:hover {*/
+            /*background-color: #ffff00 !important;*/
+            /*color: #1a75bb !important;*/
+        /*}*/
+    </style>
+<style type="text/css">
+    .author-post .cols .inner {
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+	border-radius: 3px;
+	overflow: hidden;
+    }
+    .author-post .cols .inner .category a{
+        background-color: transparent !important;
+        padding-left: 0 !important;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+	font-size:12px;
+    }
+    .post-type-post h4, .post-type-post h5 {
+        display: none;
+    }
+    .show-scroll-pop-up {
+        bottom: 0 !important;
+    }
+    
+    article .st-theme-author-intro {
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+        border: none;
+    }
+
+    article .st-theme-author-intro .image {
+        margin-bottom: 0!important;
+    }
+    article .st-theme-author-intro .image img{
+        margin: 0!important;
+        width: 100%;
+        position: relative;
+        top: 2px;
+    }
+    article .st-theme-author-intro .social{
+        margin: 0;
+        float: right;
+    }
+    article .st-theme-author-intro .social i{
+        font-size: 20px;
+    }
+    article .st-theme-author-intro .social i.fa-facebook{
+        color: #3b5999;
+    }
+    article .st-theme-author-intro .social i.fa-twitter{
+        color: #55acee;
+    }
+    article .st-theme-author-intro .social i.fa-linkedin{
+        color: #0077B5;
+    }
+    article .st-theme-author-intro .social i.fa-google-plus{
+        color: #DC4E41;
+    }
+    article .st-theme-author-intro .social i.fa-envelope{
+        color: #888;
+    }
+    article .st-theme-author-intro .social li{
+        margin-right: 5px;
+    }
+    article .st-theme-author-intro .social li:last-child{
+        margin-right: 0;
+    }
+
+
+</style>
+<script>
+    $(document).ready(function(){
+
+        var windowWidth = $(window).width();
+        if(windowWidth < 768){
+            var authorIntorHeight = $('.st-theme-author-intro .content').height();
+            var authorImageHeight = $('.st-theme-author-intro .content .image').height();
+            $('.st-theme-author-intro .content .image').css({
+                paddingTop: (authorIntorHeight - authorImageHeight - 2)/2
+            });
+        }
+
+        var TotalHeight = 0;
+        $(window).load(function(){
+            TotalHeight = $('body').height();
+            $( "table" ).wrap( "<div class='table' style='overflow: auto;'></div>" );
+        });
+        $('.scroll-pop-close').click(function(){
+            $('.scroll-pop-anchor').addClass('hidden');
+        });
+        $(window).scroll(function(){
+            var scrollTop = $(window).scrollTop();
+            if(parseInt(scrollTop) < parseInt(TotalHeight)/3){
+                console.log('up');
+                $('.scroll-pop').removeClass('show-scroll-pop-up');
+            } else {
+                $('.scroll-pop-anchor').show();
+                $('.scroll-pop').addClass('show-scroll-pop-up')
+                console.log('down');
+            }
+        });
+    });
+</script>
+<script type="text/javascript" src="./Top 7 algorithms and DS every programmer should know_files/bootstrap.min.js"></script>
+<script type="text/javascript" src="./Top 7 algorithms and DS every programmer should know_files/owl.carousel.min.js"></script>
+
+<!--<div id="footer-area">-->
+<!--    <footer id="colophon" class="site-footer" role="contentinfo">-->
+<!--        <div class="site-info container">-->
+<!--            --><!---->
+<!--            --><!---->
+<!--            --><!---->
+<!--            --><!--            <nav role="navigation" class="col-md-3 col-sm-6 widget_archive">-->
+<!--                <h3 class="footer-title widgettitle">--><!--</h3>-->
+<!--                --><!--            </nav>-->
+<!--            <nav role="navigation" class="col-md-3 col-sm-6 widget_archive">-->
+<!--                <h3 class="footer-title widgettitle">--><!--</h3>-->
+<!--                --><!--            </nav>-->
+<!--            <nav role="navigation" class="col-md-3 col-sm-6 widget_archive">-->
+<!--                <h3 class="footer-title widgettitle">--><!--</h3>-->
+<!--                --><!--            </nav>-->
+<!--            <nav role="navigation" class="col-md-3 col-sm-6 widget_archive">-->
+<!--                <h3 class="footer-title widgettitle">--><!--</h3>-->
+<!--                --><!--            </nav>-->
+<!--        </div><!-- .site-info -->
+<!--    </footer><!-- #colophon -->
+<!--</div>-->
+
+
+
+
+
+<div class="st-theme-footer-default">
+    <div data-id="1456391219" data-name="Footer - Default" class="st-sc-template-page">
+        <div class="footer-top " style="background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover">
+            <div class="row-inner">
+                <div class="st-sc-narrow-width avatar-wrapper">
+                    <div class="container">
+                        <div class="st-columns-row row">
+                            <div class="st-columns-column col-md-3 undefined undefined st-columns-column col-sm-6 col-xs-6 undefined st-columns-column col-xxxs-12 undefined">
+                                <div id="st-sc-text577c8b4a36799" class="st-sc-shortcode st-sc-text  ">
+                                    <h3 class="st-sc-title" style="padding-left: 25px;"><span>About Us</span></h3>
+                                    <div class="st-sc-content">
+                                        <div class="menu-about-us-container"><ul id="menu-about-us" class="menu"><li id="menu-item-2278" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2278"><a href="http://blog.hackerearth.com/">Blog</a></li>
+<li id="menu-item-2279" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2279"><a href="http://engineering.hackerearth.com/">Engineering Blog</a></li>
+<li id="menu-item-2280" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2280"><a href="http://news.hackerearth.com/">Updates &amp; Releases</a></li>
+<li id="menu-item-2281" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2281"><a href="https://www.hackerearth.com/team/">Team</a></li>
+<li id="menu-item-2282" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2282"><a href="https://www.hackerearth.com/careers/">Careers</a></li>
+<li id="menu-item-2283" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2283"><a href="https://www.hackerearth.com/in-media/">In the Press</a></li>
+</ul></div>                                    </div>
+                                </div>
+                            </div>
+                            <div class="st-columns-column col-md-3 undefined undefined st-columns-column col-sm-6 col-xs-6 undefined st-columns-column col-xxxs-12 undefined">
+                                <div id="st-sc-text577c8b4a36943" class="st-sc-shortcode st-sc-text  ">
+                                    <h3 class="st-sc-title" style="padding-left: 25px;"><span>Top Categories</span></h3>
+                                    <div class="st-sc-content">
+                                        <div class="menu-top-categories-container"><ul id="menu-top-categories" class="menu"><li id="menu-item-2276" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2276"><a href="http://blog.hackerearth.com/talent-assessment">Talent Assessment</a></li>
+<li id="menu-item-2277" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2277"><a href="http://blog.hackerearth.com/placements">Placements</a></li>
+<li id="menu-item-2275" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2275"><a href="http://blog.hackerearth.com/innovation-management/hackathons">Hackathons</a></li>
+<li id="menu-item-2272" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2272"><a href="http://blog.hackerearth.com/community">Community</a></li>
+<li id="menu-item-2273" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2273"><a href="http://blog.hackerearth.com/competitive-programming">Competitive Programming</a></li>
+<li id="menu-item-2274" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2274"><a href="http://blog.hackerearth.com/culture">Culture</a></li>
+</ul></div>                                    </div>
+                                </div>
+                            </div>
+                            <div class="st-columns-column col-md-3 undefined undefined st-columns-column col-sm-6 col-xs-6 undefined st-columns-column col-xxxs-12 undefined">
+                                <div id="st-sc-text577c8b4a36b06" class="st-sc-shortcode st-sc-text  ">
+                                    <h3 class="st-sc-title" style="padding-left: 25px;"><span>Resources</span></h3>
+                                    <div class="st-sc-content">
+                                        <div class="menu-resources-container"><ul id="menu-resources" class="menu"><li id="menu-item-10069" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10069"><a href="http://blog.hackerearth.com/upcoming-webinar">Webinars</a></li>
+<li id="menu-item-2100" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2100"><a href="http://blog.hackerearth.com/podcast">Podcasts</a></li>
+<li id="menu-item-2285" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2285"><a href="https://code.hackerearth.com/">CodeTable</a></li>
+<li id="menu-item-2286" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2286"><a href="https://www.hackerearth.com/hackathon-handbook/">Hackathon Handbook</a></li>
+<li id="menu-item-2287" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2287"><a href="https://www.hackerearth.com/getstarted-competitive-programming/">Complete Reference to Competitive Programming</a></li>
+<li id="menu-item-2288" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2288"><a href="https://www.hackerearth.com/getstarted-opensource/">How to get started with Open Source</a></li>
+</ul></div>                                    </div>
+                                </div>
+                            </div>
+                            <div class="st-columns-column col-md-3 undefined undefined st-columns-column col-sm-6 col-xs-6 undefined st-columns-column col-xxxs-12 undefined">
+                                <div id="st-sc-text577c8b4a36cbf" class="st-sc-shortcode st-sc-text  ">
+                                    <h3 class="st-sc-title" style="padding-left: 25px;"><span>For Companies</span></h3>
+                                    <div class="st-sc-content">
+                                        <div class="menu-for-companies-container"><ul id="menu-for-companies" class="menu"><li id="menu-item-2289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2289"><a href="https://www.hackerearth.com/recruit/">Recruit</a></li>
+<li id="menu-item-2290" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2290"><a href="https://www.hackerearth.com/assessment/">Assessment</a></li>
+<li id="menu-item-2291" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2291"><a href="https://www.hackerearth.com/recruit/source/">Sourcing</a></li>
+<li id="menu-item-2292" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2292"><a href="https://www.hackerearth.com/sprints/">Host Hackathons</a></li>
+<li id="menu-item-2293" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2293"><a href="https://www.hackerearth.com/interview/">Interview</a></li>
+</ul></div>                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom " style="background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover">
+
+        </div>
+        <div class="" style="background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover">
+            <div class="row-inner">
+                <div>
+                    <div class="container">
+                        <div class="st-columns-row row">
+                            <div class="st-columns-column col-lg-12 undefined undefined undefined undefined undefined undefined">
+                                <div id="st-sc-text577c8b4a372d9" class="st-sc-shortcode st-sc-text  ">
+                                    <div class="st-sc-content" style="overflow: hidden;padding: 0 25px;">
+                                        <img src="./Top 7 algorithms and DS every programmer should know_files/HE_identity.png" alt="logo" width="24" style="width: 24px;opacity: 0.5;">
+                                        <div class="st-theme-copyright pull-right">
+                                            © 2017 HackerEarth
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('.nc_tweetContainer.googlePlus .sw-google-plus').addClass('fa fa-google-plus');
+        $('.nc_tweetContainer.twitter .sw-twitter').addClass('fa fa-twitter');
+        $('.nc_tweetContainer.swp_fb .sw-facebook').addClass('fa fa-facebook');
+        $('.nc_tweetContainer.linkedIn .sw-linkedin').addClass('fa fa-linkedin');
+
+        if($('.owl-carousel .item').length > 3){
+            $('.author-post-row').addClass('hidden');
+            $('.author-post-row-owl').removeClass('hidden');
+            $('.owl-carousel').on('initialized.owl.carousel', function(event) {
+                console.log('testing');
+                $('.owl-carousel .item').each(function(){
+                    var max = -1;
+                    $('.owl-carousel .item .info').each(function() {
+                        var h = $(this).height();
+                        max = h > max ? h : max;
+                    });
+                    $('.owl-carousel .item .info').height(max);
+                });
+
+            });
+
+            $('.owl-carousel').owlCarousel({
+                margin: 10,
+                loop:true,
+                autoplay:false,
+                callbacks: true,
+                nav: true,
+                navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:3
+                    }
+                }
+            });
+
+        } else {
+            $('.author-post-row-owl').addClass('hidden');
+            $('.author-post-row').removeClass('hidden');
+        }
+//        $('.owl-carousel').owlCarousel({
+//            loop:true,
+//            items:1,
+//            autoplay:true
+//        });
+        $('.hackerearth-subscription-flash i').click(function(){
+           $('.hackerearth-subscription-flash').detach();
+        });
+        setTimeout(function(){
+            $('.hackerearth-subscription-flash').detach();
+        }, 20000);
+    });
+</script>
+<style>
+    #stc-subscribe-btn {
+        background-color: #4c9cdf;
+    }
+    .subscriber-email input[type=submit] {
+        background-color: #4c9cdf;
+    }
+    .hackerearth-subscription-flash {
+        position: fixed;
+        top: 100px;
+        background: #124a0d;
+        text-align: center;
+        z-index: 1111;
+        color: #fff;
+        width: 80%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border-radius: 4px;
+        padding: 10px;
+    }
+    .hackerearth-subscription-flash i{
+        position: absolute;
+        right: 10px;
+        top: 6px;
+        cursor: pointer;
+    }
+    .owl-dots {
+        display: none;
+    }
+    .owl-nav {
+        overflow: hidden;
+        width: 90px;
+        margin: 0 auto;
+    }
+    .owl-nav .owl-prev, .owl-nav .owl-next {
+        background-color: #323754;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 5px;
+        color: #fff;
+    }
+    .owl-nav .owl-prev {
+        float: left;
+    }
+    .owl-nav .owl-next {
+        float: right;
+    }
+    .tags-block .tag {
+        margin-bottom: 8px;
+        display: inline-block;
+    }
+    .navbar-nav a:focus, .navbar-nav a:active, .navbar-nav a:visited{
+        background: transparent !important;
+        outline: none;
+    }
+
+</style>
+<!---->
+<!--<footer class="main-footer">-->
+<!--    <div class="footer-bottom-container container">-->
+<!--        <div class="footer-bottom">-->
+<!---->
+<!--            <img src="--><!--/img/logo.png" alt="logo" width="110"/>-->
+<!---->
+<!--            <span class="align-right float-right">© 2017 HackerEarth</span>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
+
+
+<script type="text/javascript">
+    
+    /*
+    A simple jQuery modal (http://github.com/kylefox/jquery-modal)
+    Version 0.7.0
+*/
+(function($) {
+
+    $('.hackerearth-post').each(function(){
+        var titleHeight = $(this).find('title').height();
+        if(titleHeight > 53){
+            $('.feature .text-part .description').css({
+                marginTop: '20px'
+            })
+        }
+    });
+
+  var modals = [],
+      getCurrent = function() {
+        return modals.length ? modals[modals.length - 1] : null;
+      },
+      selectCurrent = function() {
+        var i,
+            selected = false;
+        for (i=modals.length-1; i>=0; i--) {
+          if (modals[i].$blocker) {
+            modals[i].$blocker.toggleClass('current',!selected).toggleClass('behind',selected);
+            selected = true;
+          }
+        }
+      };
+
+  $.modal = function(el, options) {
+    var remove, target;
+    this.$body = $('body');
+    this.options = $.extend({}, $.modal.defaults, options);
+    this.options.doFade = !isNaN(parseInt(this.options.fadeDuration, 10));
+    this.$blocker = null;
+    if (this.options.closeExisting)
+      while ($.modal.isActive())
+        $.modal.close(); // Close any open modals.
+    modals.push(this);
+    if (el.is('a')) {
+      target = el.attr('href');
+      //Select element by id from href
+      if (/^#/.test(target)) {
+        this.$elm = $(target);
+        if (this.$elm.length !== 1) return null;
+        this.$body.append(this.$elm);
+        this.open();
+      //AJAX
+      } else {
+        this.$elm = $('<div>');
+        this.$body.append(this.$elm);
+        remove = function(event, modal) { modal.elm.remove(); };
+        this.showSpinner();
+        el.trigger($.modal.AJAX_SEND);
+        $.get(target).done(function(html) {
+          if (!$.modal.isActive()) return;
+          el.trigger($.modal.AJAX_SUCCESS);
+          var current = getCurrent();
+          current.$elm.empty().append(html).on($.modal.CLOSE, remove);
+          current.hideSpinner();
+          current.open();
+          el.trigger($.modal.AJAX_COMPLETE);
+        }).fail(function() {
+          el.trigger($.modal.AJAX_FAIL);
+          var current = getCurrent();
+          current.hideSpinner();
+          modals.pop(); // remove expected modal from the list
+          el.trigger($.modal.AJAX_COMPLETE);
+        });
+      }
+    } else {
+      this.$elm = el;
+      this.$body.append(this.$elm);
+      this.open();
+    }
+  };
+
+  $.modal.prototype = {
+    constructor: $.modal,
+
+    open: function() {
+      var m = this;
+      this.block();
+      if(this.options.doFade) {
+        setTimeout(function() {
+          m.show();
+        }, this.options.fadeDuration * this.options.fadeDelay);
+      } else {
+        this.show();
+      }
+      $(document).off('keydown.modal').on('keydown.modal', function(event) {
+        var current = getCurrent();
+        if (event.which == 27 && current.options.escapeClose) current.close();
+      });
+      if (this.options.clickClose)
+        this.$blocker.click(function(e) {
+          if (e.target==this)
+            $.modal.close();
+        });
+    },
+
+    close: function() {
+      modals.pop();
+      this.unblock();
+      this.hide();
+      if (!$.modal.isActive())
+        $(document).off('keydown.modal');
+    },
+
+    block: function() {
+      this.$elm.trigger($.modal.BEFORE_BLOCK, [this._ctx()]);
+      this.$body.css('overflow','hidden');
+      this.$blocker = $('<div class="jquery-modal blocker current"></div>').appendTo(this.$body);
+      selectCurrent();
+      if(this.options.doFade) {
+        this.$blocker.css('opacity',0).animate({opacity: 1}, this.options.fadeDuration);
+      }
+      this.$elm.trigger($.modal.BLOCK, [this._ctx()]);
+    },
+
+    unblock: function(now) {
+      if (!now && this.options.doFade)
+        this.$blocker.fadeOut(this.options.fadeDuration, this.unblock.bind(this,true));
+      else {
+        this.$blocker.children().appendTo(this.$body);
+        this.$blocker.remove();
+        this.$blocker = null;
+        selectCurrent();
+        if (!$.modal.isActive())
+          this.$body.css('overflow','');
+      }
+    },
+
+    show: function() {
+      this.$elm.trigger($.modal.BEFORE_OPEN, [this._ctx()]);
+      if (this.options.showClose) {
+        this.closeButton = $('<a href="#close-modal" rel="modal:close" class="close-modal ' + this.options.closeClass + '">' + this.options.closeText + '</a>');
+        this.$elm.append(this.closeButton);
+      }
+      this.$elm.addClass(this.options.modalClass).appendTo(this.$blocker);
+      if(this.options.doFade) {
+        this.$elm.css('opacity',0).show().animate({opacity: 1}, this.options.fadeDuration);
+      } else {
+        this.$elm.show();
+      }
+      this.$elm.trigger($.modal.OPEN, [this._ctx()]);
+    },
+
+    hide: function() {
+      this.$elm.trigger($.modal.BEFORE_CLOSE, [this._ctx()]);
+      if (this.closeButton) this.closeButton.remove();
+      var _this = this;
+      if(this.options.doFade) {
+        this.$elm.fadeOut(this.options.fadeDuration, function () {
+          _this.$elm.trigger($.modal.AFTER_CLOSE, [_this._ctx()]);
+        });
+      } else {
+        this.$elm.hide(0, function () {
+          _this.$elm.trigger($.modal.AFTER_CLOSE, [_this._ctx()]);
+        });
+      }
+      this.$elm.trigger($.modal.CLOSE, [this._ctx()]);
+    },
+
+    showSpinner: function() {
+      if (!this.options.showSpinner) return;
+      this.spinner = this.spinner || $('<div class="' + this.options.modalClass + '-spinner"></div>')
+        .append(this.options.spinnerHtml);
+      this.$body.append(this.spinner);
+      this.spinner.show();
+    },
+
+    hideSpinner: function() {
+      if (this.spinner) this.spinner.remove();
+    },
+
+    //Return context for custom events
+    _ctx: function() {
+      return { elm: this.$elm, $blocker: this.$blocker, options: this.options };
+    }
+  };
+
+  $.modal.close = function(event) {
+    if (!$.modal.isActive()) return;
+    if (event) event.preventDefault();
+    var current = getCurrent();
+    current.close();
+    return current.$elm;
+  };
+
+  // Returns if there currently is an active modal
+  $.modal.isActive = function () {
+    return modals.length > 0;
+  }
+
+  $.modal.defaults = {
+    closeExisting: true,
+    escapeClose: true,
+    clickClose: true,
+    closeText: 'Close',
+    closeClass: '',
+    modalClass: "modal",
+    spinnerHtml: null,
+    showSpinner: true,
+    showClose: true,
+    fadeDuration: null,   // Number of milliseconds the fade animation takes.
+    fadeDelay: 1.0        // Point during the overlay's fade-in that the modal begins to fade in (.5 = 50%, 1.5 = 150%, etc.)
+  };
+
+  // Event constants
+  $.modal.BEFORE_BLOCK = 'modal:before-block';
+  $.modal.BLOCK = 'modal:block';
+  $.modal.BEFORE_OPEN = 'modal:before-open';
+  $.modal.OPEN = 'modal:open';
+  $.modal.BEFORE_CLOSE = 'modal:before-close';
+  $.modal.CLOSE = 'modal:close';
+  $.modal.AFTER_CLOSE = 'modal:after-close';
+  $.modal.AJAX_SEND = 'modal:ajax:send';
+  $.modal.AJAX_SUCCESS = 'modal:ajax:success';
+  $.modal.AJAX_FAIL = 'modal:ajax:fail';
+  $.modal.AJAX_COMPLETE = 'modal:ajax:complete';
+
+  $.fn.modal = function(options){
+    if (this.length === 1) {
+      new $.modal(this, options);
+    }
+    return this;
+  };
+
+  // Automatically bind links with rel="modal:close" to, well, close the modal.
+  $(document).on('click.modal', 'a[rel="modal:close"]', $.modal.close);
+  $(document).on('click.modal', 'a[rel="modal:open"]', function(event) {
+    event.preventDefault();
+    $(this).modal();
+  });
+})(jQuery);
+</script>
+
+<style type="text/css">
+    
+    .blocker {
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  z-index: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.75);
+  text-align: center;
+}
+.blocker:before{
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.05em;
+}
+.blocker.behind {
+  background-color: transparent;
+}
+.modal {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 2;
+    width: auto;
+    max-width: 640px;
+  background: #fff;
+  padding: 15px 30px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px #000;
+  -moz-box-shadow: 0 0 10px #000;
+  -o-box-shadow: 0 0 10px #000;
+  -ms-box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px #000;
+  text-align: left;
+}
+
+.wpcf7 {
+ width: 80%;
+ border:none;
+}
+
+.modal a.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAANjr9RwUqgAAACBjSFJNAABtmAAAc44AAPJxAACDbAAAg7sAANTIAAAx7AAAGbyeiMU/AAAG7ElEQVR42mJkwA8YoZjBwcGB6fPnz4w/fvxg/PnzJ2N6ejoLFxcX47Rp036B5Dk4OP7z8vL+P3DgwD+o3v9QjBUABBALHguZoJhZXV2dVUNDgxNIcwEtZnn27Nl/ZmZmQRYWFmag5c90dHQY5OXl/z98+PDn1atXv79+/foPUN9fIP4HxRgOAAggRhyWMoOwqKgoq6GhIZe3t7eYrq6uHBDb8/Pz27Gysloga/jz588FYGicPn/+/OapU6deOnXq1GdgqPwCOuA31AF/0S0HCCB0xAQNBU4FBQWB0NBQublz59oADV37Hw28ePHi74MHD/6ii3/8+HEFMGQUgQ6WEhQU5AeZBTWTCdkigABC9ylIAZeMjIxQTEyMysaNG/3+/v37AGTgr1+//s2cOfOXm5vbN6Caz8jY1NT0a29v76/v37//g6q9sHfv3khjY2M5YAgJgsyEmg0PYYAAQreUk4+PT8jd3V1l1apVgUAzfoIM2rlz5x9gHH5BtxAdA9PB1zNnzvyB+R6oLxoopgC1nBPZcoAAgiFQnLIDMb+enp5iV1eXBzDeHoI0z58//xcwIX0mZCkMg9S2trb+hFk+ffr0QCkpKVmQ2VA7QHYxAgQQzLesQMwjIiIilZWVZfPu3bstMJ+SYikyBmUzkBnA9HEMyNcCYgmQHVC7mAACCJagOEBBbGdnp7lgwYJEkIavX7/+BcY1SvAaGRl9tba2xohjMTGxL8nJyT+AWQsuxsbG9vnp06e/QWYdPHiwHmiWKlBcCGQXyNcAAQSzmBuoSQqYim3u37+/EKR48uTJv5ANB+bVr7Dga2xs/AkTV1JS+gq0AJyoQIkPWU9aWtoPkPibN2/2A/l6QCwJ9TULQADB4hcY//xKXl5eHt++fbsAUmxhYYHiM1DiAsr9R7ZcVVUVbikIdHd3/0TWIyws/AWYVsByAgICdkAxRSAWAGI2gACClV7C4uLiOv7+/lEgRZ8+ffqLLd6ABck3ZMuB6uCWrlu37je29HDx4kVwQisvL88FFqkaQDERUHADBBAomBl5eHiYgQmLE1hSgQQZgIUD1lJm69atf4HR8R1YKoH5QIPAWWP9+vV/gOI/gHkeQw+wGAXTwAJJ5t+/f/BUDRBA4NIEKMDMyMjICtQIiniG379/4yza7t69+//Lly8oDrty5co/bJaCAEwcZCkwwTJDLWYCCCCwxcDgY3z16hXDnTt3voP4EhISWA0BFgZMwNqHExh3jMiG1tbWsgHjnA2bHmAeBtdWwOL1MycnJ7wAAQggBmi+kgIW/OaKiorJwOLuFShO0LMSMPF9AUYBSpz6+vqixHlOTs4P9MIEWHaDsxSwYMoE2mEGFJcG5SKAAGJCqjv/AbPUn8ePH98ACQQHB6NUmZqamkzABIgSp5s3bwbHORCA1QDLAWZkPc7OzszA8oHl5cuXVy5duvQBGIXwWgoggGA+FgO6xkBNTS28r69vDrT2+Y1cIMDyJchX6KkXVEmAshd6KB06dAic94EO3AzkBwGxPhCLg8ptgACCZyeQp9jZ2b2AmsuAefM8tnxJCk5ISPgOLTKfAdNEOVDMA2QHLDsBBBC8AAFlbmCLwlZISCg5JSVlJizeQAaQaimoWAUFK0g/sGGwHiiWCMS2yAUIQAAxI7c4gEmeFZi4OJ48ecLMzc39CRiEmgEBASxA/QzA8vYvAxEgNjaWZc2aNezAsprp2LFjp4FpZRdQ+AkQvwLij0AMSoC/AQIIXklAC3AVUBoBxmE8sPXQAiyvN8J8fuPGjR/h4eHf0eMdhkENhOPHj8OT+NGjR88BxZuBOA5kJtRseCUBEECMSI0AdmgBDooDaaDl8sASTSkyMlKzpqZGU1paGlS7MABLrX83b978A6zwwakTmE0YgIkSnHpBfGCV+gxYh98qKSk5CeTeAxVeQPwUiN8AMSjxgdLNX4AAYkRqCLBAXcMHtVwSaLkMMMHJAvOq9IQJE9R8fHxElJWV1bEF8aNHj+7t27fvLTDlXwXGLyhoH0OD+DnU0k/QYAa1QP8BBBAjWsuSFWo5LzRYxKFYAljqiAHzqxCwIBEwMTERBdZeoOYMA7Bl+RFYEbwB5oS3IA9D4/IFEL+E4nfQ6IDFLTgvAwQQI5ZmLRtSsINSuyA0uwlBUyQPMPWD20/AKo8ByP4DTJTfgRgUjB+gFoEc8R6amGDB+wu5mQsQQIxYmrdMUJ+zQTM6NzQEeKGO4UJqOzFADQMZ/A1qCSzBfQXi71ALfyM17sEAIIAY8fQiWKAYFgIwzIbWTv4HjbdfUAf8RPLhH1icojfoAQKIEU8bG9kRyF0aRiz6YP0k5C4LsmUY9TtAADEyEA+IVfufGEUAAQYABejinPr4dLEAAAAASUVORK5CYII=") no-repeat 0 0;
+}
+
+
+
+.hackathon-contact-modal {
+    padding: 10px 0 0;
+}
+.hackathon-contact-modal input[type=text], .hackathon-contact-modal input[type=email]{
+    height: 45px;
+    background: #fff;
+}
+.hackathon-contact-modal h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.hackathon-contact-modal h1 span {
+    padding-bottom: 0px;
+    display: inline-block;
+}
+
+.hackathon-contact-modal h3 {
+    padding-top: 15px;
+        font-size: 22px;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 8px;
+}
+
+.hackathon-contact-modal .name {
+    padding-top: 25px;
+}
+
+.hackathon-contact-modal ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+    color: #000000;
+    text-align: center;
+    font-size: 17px;
+}
+.hackathon-contact-modal .wpcf7-form-control-wrap {
+  width: 100%;
+}
+.hackathon-contact-modal .wpcf7 {
+  padding-bottom: 0 !important;
+}
+
+.hackathon-contact-modal input[type=submit] {
+    border-radius: 0;
+    background-color: #EB7C30;
+    color: #000000;
+    border: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 19px;
+    box-shadow: none;
+}
+.hackathon-contact-modal .modal-arrow {
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+.hackathon-contact-modal .modal-arrow span {
+  background-color: #ec7c30;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: -26px;
+  left: 45%;
+}
+.hackathon-contact-modal .modal-arrow span i{
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  font-size: 30px;
+}
+#wpcf7-f1933-p1899-o1 {
+      margin: 30px auto 0;
+}
+.hackathon-contact-modal h1 {
+  margin-bottom: 20px; 
+  color: #000;
+}
+.hackathon-contact-modal h3 {
+  color: #000;
+}
+.hackathon-contact-modal .fa-chevron-down {
+ color: #000; 
+}
+.blocker {
+  z-index: 10000000;
+}
+
+a {
+   color: #4c9cdf;
+}
+
+.description p {
+   color: #9ca3a8;
+}
+
+/*a:hover {*/
+   /*color: #4c9cdf!important;*/
+   /*background: none!important;*/
+/*}*/
+
+.blog-header nav li a:hover {
+   color: #4c9cdf;
+   background: none;
+}
+
+
+.single article.post .entry-content {
+    font-weight: 300 ! important;
+}
+
+    .st-theme-footer-default {
+        padding-top: 10px;
+        position: relative;
+        width: 100%;
+        background: #fff;
+        border-top: 1px solid #e5e7e8;
+    }
+    .hackerearth-post {
+        border-color: #ccc !important;
+        padding-bottom: 22px !important;
+    }
+    .st-theme-footer-default .menu {
+        padding-left: 25px;
+        list-style: none;
+    }
+    .st-theme-footer-default .menu a {
+        font-size: 12px;
+        color: #9ca3a8;
+	font-weight: 300;
+    }
+    .st-theme-footer-default .menu a:hover {
+        color: #46535e;
+        text-decoration: underline;
+    }
+    .st-theme-footer-default h3 {
+        margin-bottom: 6px;
+    }
+    .st-theme-footer-default h3 span{
+        color: #9ca3a8;
+    }
+    .st-theme-footer-default .footer-bottom {
+        border-bottom: none;
+        border-color: #e5e7e8;
+    }
+    .st-theme-footer-default .footer-top {
+        padding-bottom: 0;
+    }
+    .st-theme-footer-default .st-sc-shortcode.st-sc-text {
+        margin-top: 15px;
+        margin-bottom: 6px;
+    }
+    .blog-content-block, .podcast-content-block, .single-page-content {
+        padding-top: 0 !important;
+    }
+    .s-single-share {
+        margin-bottom: 10px;
+    }
+    .s-single-share .IN-widget >span:last-child{
+        position: relative;
+        right: -11px;
+        top: -4px;
+    }
+
+    .single article.post .st-theme-social-header {
+        z-index: 111;
+    }
+
+    .single iframe {
+        width: 100% !important;
+    }
+
+    .single, .home, .category, .search, .author, .archive, .page-template-webinar-listing-php {
+        background-color: #F3F3F3;
+    }
+    .single #avatar-main-content .entry-content {
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow : 0 1px 1px 0 rgba(0,0,0,0.1);
+        padding: 30px 40px;
+    }
+    .single #secondary .widget_search {
+        background-color: transparent !important;
+        box-shadow: none !important;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .st-theme-breadcrumb li:after {
+    	border-left: 4px solid #F3F3F3;
+    }
+    /*.single #secondary aside{*/
+        /*background-color: #fff;*/
+        /*padding: 15px;*/
+        /*border-radius: 4px;*/
+        /*box-shadow : 0 1px 1px 0 rgba(0,0,0,0.1);*/
+    /*}*/
+
+
+    .single #secondary .form-search .form-group{
+        margin-bottom: 0;
+    }
+    .single #subscribe-modal, .category-developer-tips #subscribe-modal {
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow : 0 1px 1px 0 rgba(0,0,0,0.1);
+    }
+    /*.category .hackerearth-webinar, .category .hackerearth-post, .category .hackerearth-podcast {*/
+        /*background-color: #fff;*/
+        /*border-radius: 3px;*/
+        /*padding: 15px !important;*/
+        /*border: none;*/
+        /*box-shadow : 0 1px 1px 0 rgba(0,0,0,0.1);*/
+    /*}*/
+     .hackerearth-webinar .title a, .hackerearth-post .title a, .hackerearth-podcast .title a {
+        line-height: 24px;
+    }
+     .hackerearth-webinar, .hackerearth-post, .hackerearth-podcast {
+        background-color: #fff;
+        border-radius: 3px;
+        padding: 0 !important;
+        border: none;
+        box-shadow : 0 1px 1px 0 rgba(0,0,0,0.1);
+    }
+    .hackerearth-webinar .feature, .hackerearth-post .feature, .hackerearth-podcast .feature {
+        padding-left: 15px;
+    }
+     .hackerearth-webinar .media, .hackerearth-post .media, .hackerearth-podcast .media{
+        padding: 0 !important;
+         border-top-left-radius: 4px;
+         border-bottom-left-radius: 4px;
+    }
+     .hackerearth-webinar .description,  .hackerearth-post .description,  .hackerearth-podcast .description{
+        padding-right: 15px;
+    }
+    .hackerearth-webinar .text-part, .hackerearth-post .text-part, .hackerearth-podcast .text-part{
+        padding: 8px 15px 15px;
+    }
+    .blog-grid-1 .st-sc-shortcode, .blog-grid-2 .st-sc-shortcode {
+        background-color: #fff;
+        border-radius: 3px;
+        border: none;
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        padding: 15px !important;
+    }
+    .blog-grid-1 .media, .blog-grid-2 .media{
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+    .blog-grid-1 {
+        padding-right: 10px !important;
+    }
+    .blog-grid-2 {
+        padding-left: 10px !important;
+    }
+    .ssrp ul li a span{
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        left: 50%;
+        display: block;
+        width: 100%;
+        padding-left: 80px;
+        line-height: 16px;
+        font-size: 12px;
+    }
+    #st-theme-main-menu ul.menu > .menu-item > a {
+        padding: 10px 16px 10px 7px !important;
+    }
+    .blog-header nav{
+        padding: 0 20px;
+    }
+    .not-active-pag:hover {
+        background-color: #fff !important;
+        border: 1px solid #eee !important;
+        color: #888 !important;
+    }
+@media (max-width: 450px) {
+	body .cols, body .container-fluid, body .row [class*="col-"] {
+		width: 100%;
+	}
+    .entry-content img.size-medium{
+        width: 100%;
+    }
+    .entry-content img{
+        margin: 0 !important;
+    }
+    iframe {
+        width: 100%;
+    }
+    .single-page .entry-header .entry-title {
+        font-size: 25px !important;
+        line-height: 30px !important;
+    }
+}
+    @media screen and (max-width:767px) {
+        .st-theme-footer-default .col-xs-6{
+            width: 50% !important;
+            padding: 0;
+        }
+        .st-theme-footer-default .avatar-wrapper .container{
+            padding: 0;
+        }
+    }
+
+</style>
+
+  <!-- Link to open the modal -->
+
+        <script type="text/javascript">
+        // <![CDATA[
+        var disqus_shortname = 'hackerearthblog';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1 && nodes[i].parentNode.tagName == 'A') {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) { url = url[0]; }
+                    else { url = url[1]; }
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        // ]]>
+        </script>
+        <div class="nc_socialPanelSide nc_socialPanel swp_default swp_d_fullColor swp_i_fullColor swp_o_fullColor slide" data-position="below" data-float="floatNone" data-count="4" data-floatcolor="#ffffff" data-screen-width="1100" data-transition="slide" data-mobilefloat="off"><div class="nc_tweetContainer googlePlus" data-id="1" data-network="google_plus"><a rel="nofollow" target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fblog.hackerearth.com%2F2015%2F05%2Ftop-7-algorithms-and-data-structures-every-programmer-should-know-about.html" data-link="https://plus.google.com/share?url=http%3A%2F%2Fblog.hackerearth.com%2F2015%2F05%2Ftop-7-algorithms-and-data-structures-every-programmer-should-know-about.html" class="nc_tweet"><span class="iconFiller"><span class="spaceManWilly"><i class="sw sw-google-plus fa fa-google-plus"></i></span></span><span class="swp_count">86</span></a></div><div class="nc_tweetContainer twitter" data-id="2" data-network="twitter"><a rel="nofollow" target="_blank" href="https://twitter.com/share?original_referer=/&amp;text=Top+7+algorithms+and+data+structures+every+programmer+should+know+about&amp;url=http://blog.hackerearth.com/2015/05/top-7-algorithms-and-data-structures-every-programmer-should-know-about.html&amp;via=https://twitter.com/raviojha21" data-link="https://twitter.com/share?original_referer=/&amp;text=Top+7+algorithms+and+data+structures+every+programmer+should+know+about&amp;url=http://blog.hackerearth.com/2015/05/top-7-algorithms-and-data-structures-every-programmer-should-know-about.html&amp;via=https://twitter.com/raviojha21" class="nc_tweet"><span class="swp_count swp_hide"><span class="iconFiller"><span class="spaceManWilly"><i class="fa fa-twitter"></i></span></span></span></a></div><div class="nc_tweetContainer swp_fb" data-id="3" data-network="facebook"><a rel="nofollow" target="_blank" href="http://www.facebook.com/share.php?u=http%3A%2F%2Fblog.hackerearth.com%2F2015%2F05%2Ftop-7-algorithms-and-data-structures-every-programmer-should-know-about.html" data-link="http://www.facebook.com/share.php?u=http%3A%2F%2Fblog.hackerearth.com%2F2015%2F05%2Ftop-7-algorithms-and-data-structures-every-programmer-should-know-about.html" class="nc_tweet"><span class="iconFiller"><span class="spaceManWilly"><i class="sw sw-facebook fa fa-facebook"></i></span></span><span class="swp_count">3K</span></a></div><div class="nc_tweetContainer linkedIn" data-id="4" data-network="linked_in"><a rel="nofollow" target="_blank" href="https://www.linkedin.com/cws/share?url=http%3A%2F%2Fblog.hackerearth.com%2F2015%2F05%2Ftop-7-algorithms-and-data-structures-every-programmer-should-know-about.html" data-link="https://www.linkedin.com/cws/share?url=http%3A%2F%2Fblog.hackerearth.com%2F2015%2F05%2Ftop-7-algorithms-and-data-structures-every-programmer-should-know-about.html" class="nc_tweet"><span class="iconFiller"><span class="spaceManWilly"><i class="sw sw-linkedin fa fa-linkedin"></i></span></span><span class="swp_count">392</span></a></div></div><!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com :: Campaign Title: Online coding test blog post --><div id="om-oorcr7htbcmappg5eqqx-holder"></div><script>var oorcr7htbcmappg5eqqx,oorcr7htbcmappg5eqqx_poll=function(){var r=0;return function(n,l){clearInterval(r),r=setInterval(n,l)}}();!function(e,t,n){if(e.getElementById(n)){oorcr7htbcmappg5eqqx_poll(function(){if(window['om_loaded']){if(!oorcr7htbcmappg5eqqx){oorcr7htbcmappg5eqqx=new OptinMonsterApp();return oorcr7htbcmappg5eqqx.init({"u":"33150.620473","staging":0,"dev":0,"beta":0});}}},25);return;}var d=false,o=e.createElement(t);o.id=n,o.src="//a.optnmstr.com/app/js/api.min.js",o.async=true,o.onload=o.onreadystatechange=function(){if(!d){if(!this.readyState||this.readyState==="loaded"||this.readyState==="complete"){try{d=om_loaded=true;oorcr7htbcmappg5eqqx=new OptinMonsterApp();oorcr7htbcmappg5eqqx.init({"u":"33150.620473","staging":0,"dev":0,"beta":0});o.onload=o.onreadystatechange=null;}catch(t){}}}};(document.getElementsByTagName("head")[0]||document.documentElement).appendChild(o)}(document,"script","omapi-script");</script><!-- / OptinMonster -->		<script type="text/javascript">var oorcr7htbcmappg5eqqx_shortcode = true;</script>
+		<link rel="stylesheet" id="crayon-css" href="./Top 7 algorithms and DS every programmer should know_files/crayon.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="./Top 7 algorithms and DS every programmer should know_files/jetpack.css" type="text/css" media="all">
+<script type="text/javascript" src="./Top 7 algorithms and DS every programmer should know_files/jquery.js"></script>
+<script type="text/javascript" src="./Top 7 algorithms and DS every programmer should know_files/jquery-migrate.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"http:\/\/blog.hackerearth.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Top 7 algorithms and DS every programmer should know_files/crayon.min.js"></script>
+      <script type="text/javascript">
+      jQuery(function($){
+          
+          $('#stc-unsubscribe-checkbox').click( function() {
+            
+            if( $(this).prop('checked') == true ) {
+              $('.stc-categories').hide();
+              $('#stc-subscribe-btn').hide();
+              $('#stc-unsubscribe-btn').show();
+            }else{
+              $('.stc-categories').show();
+              $('#stc-subscribe-btn').show();
+              $('#stc-unsubscribe-btn').hide();
+            }
+          });
+
+          $('#stc-all-categories').click( function() {
+            if( $(this).prop('checked') == true ) {
+//              $('div.stc-categories-checkboxes').hide();
+                $('.stc-categories-checkboxes .checkbox label').addClass('active-cat');
+              $('div.stc-categories-checkboxes input[type=checkbox]').each(function () {
+              $(this).prop('checked', true);
+            }); 
+            }else{
+//              $('div.stc-categories-checkboxes').show();
+                $('.stc-categories-checkboxes .checkbox label').removeClass('active-cat');
+              $('div.stc-categories-checkboxes input[type=checkbox]').each(function () {
+              $(this).prop('checked', false);
+            });
+            }              
+            
+          });
+
+      });
+      </script>
+
+      <script type="text/javascript">var swpClickTracking = false; var swp_nonce = "d4ffe53406";</script>		<script type="text/javascript">var omapi_localized = { ajax: 'http://blog.hackerearth.com/wp-admin/admin-ajax.php?optin-monster-ajax-route=1', nonce: '74615327bb', slugs: {"oorcr7htbcmappg5eqqx":{"slug":"oorcr7htbcmappg5eqqx","mailpoet":false}} };</script>
+		
+
+<!-- Dynamic page generated in 3.558 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2017-09-06 23:49:47 -->
+
+<!-- Compression = gzip --><iframe style="display: none;" src="./Top 7 algorithms and DS every programmer should know_files/saved_resource(3).html"></iframe></body></html>

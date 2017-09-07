@@ -1,0 +1,924 @@
+/*header page start*/
+/* line 2, ../scss/hackers_earth.scss */
+.blog-header {
+  background-color: #323754;
+}
+/* line 6, ../scss/hackers_earth.scss */
+.blog-header .navbar-header button .icon-bar {
+  background-color: #fff;
+}
+/* line 11, ../scss/hackers_earth.scss */
+.blog-header nav {
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
+}
+/* line 15, ../scss/hackers_earth.scss */
+.blog-header nav img {
+  max-width: 160px;
+}
+/* line 19, ../scss/hackers_earth.scss */
+.blog-header nav li a {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  font-weight: 300;
+  padding: 14px 20px;
+  text-transform: uppercase;
+}
+/* line 24, ../scss/hackers_earth.scss */
+.blog-header nav li a:hover {
+  color: #323754;
+}
+/* line 30, ../scss/hackers_earth.scss */
+.blog-header nav .header-search-form form {
+  margin: 0 auto;
+  width: 310px;
+  display: table;
+}
+/* line 34, ../scss/hackers_earth.scss */
+.blog-header nav .header-search-form form .form-group {
+  margin: 0;
+}
+/* line 37, ../scss/hackers_earth.scss */
+.blog-header nav .header-search-form form input {
+  background-color: #323754;
+  color: #fff;
+}
+/* line 41, ../scss/hackers_earth.scss */
+.blog-header nav .header-search-form form button {
+  background-color: #323754;
+  color: #fff;
+}
+
+/* line 49, ../scss/hackers_earth.scss */
+.category-menu {
+}
+/* line 52, ../scss/hackers_earth.scss */
+.category-menu nav.primary-navigation:before {
+  display: none;
+}
+/* line 55, ../scss/hackers_earth.scss */
+.category-menu nav.primary-navigation:after {
+  display: none;
+}
+
+/* line 60, ../scss/hackers_earth.scss */
+.title-link {
+  color: #46535e !important;
+}
+/* line 62, ../scss/hackers_earth.scss */
+.title-link:hover {
+  color: #4c9cdf !important;
+}
+
+/* line 69, ../scss/hackers_earth.scss */
+.home .category-header .current-menu-item a {
+  color: #46535e !important;
+  border-bottom-color: transparent !important;
+}
+
+/* line 77, ../scss/hackers_earth.scss */
+.category-header {
+  position: relative;
+  background: #323754;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.4) inset;
+  border: none;
+  min-height: 40px;
+}
+/* line 79, ../scss/hackers_earth.scss */
+.category-header .menu-item {
+  border-bottom-color: transparent !important;
+}
+/* line 82, ../scss/hackers_earth.scss */
+.category-header .current-menu-item {
+  border-bottom-color: none !important;
+  box-shadow: 0px -3px 0px 0px #4c9cdf inset;
+}
+/* line 84, ../scss/hackers_earth.scss */
+.category-header .current-menu-item a {
+  color: #4c9cdf !important;
+}
+/* line 89, ../scss/hackers_earth.scss */
+.category-header .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.nav-and-comment {
+  margin: 0 auto;
+  float: none;
+}
+/* line 93, ../scss/hackers_earth.scss */
+.category-header:before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  height: 5px;
+  width: 100%;
+}
+
+/* line 102, ../scss/hackers_earth.scss */
+.tags-block {
+  display: inline-block;
+  margin: 0 12px 20px 0;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
+}
+/* line 108, ../scss/hackers_earth.scss */
+.tags-block .comma:last-child {
+  display: none;
+}
+
+/* line 113, ../scss/hackers_earth.scss */
+.single-page-content .single-tags-block {
+  font-size: 14px;
+  display: inline-block;
+  font-weight: 300;
+}
+/* line 117, ../scss/hackers_earth.scss */
+.single-page-content .single-tags-block .comma:last-child {
+  display: none;
+}
+/* line 120, ../scss/hackers_earth.scss */
+.single-page-content .single-tags-block a.tag {
+  margin: 0 !important;
+}
+/* line 123, ../scss/hackers_earth.scss */
+.single-page-content .single-tags-block span {
+  margin: 0 !important;
+}
+/* line 128, ../scss/hackers_earth.scss */
+.single-page-content .entry-content p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: 'Lora', serif;
+  margin-bottom: 20px;
+  text-align: left !important;
+
+}
+
+.single-page-content .entry-content li {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+
+}
+
+.single-page-content .entry-content ol {
+  padding-left: 20px;
+}
+
+.single-page-content .entry-content p span,
+.single-page-content .entry-content p b,
+.single-page-content .entry-content p strong,
+.single-page-content .entry-content p a,
+.single-page-content .entry-content li,
+.single-page-content .entry-content li a,
+.single-page-content .entry-content li span  {
+
+  font-family: 'Lora', serif;
+  text-align: left !important;
+}
+
+.single-page-content .entry-content h1,
+.single-page-content .entry-content h2,
+.single-page-content .entry-content h3
+ {
+  font-weight: 600;
+}
+
+.single-page-content .entry-content h2 {
+  font-size: 24px;
+}
+.single-page-content .entry-content h3 {
+  font-size: 20px;
+}
+
+.single-page-content .entry-content li h3 {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 40px;
+}
+
+/* line 131, ../scss/hackers_earth.scss */
+.single-page-content .entry-content p em {
+  font-style: normal;
+  font-weight: 400;
+}
+/* line 138, ../scss/hackers_earth.scss */
+.single-page-content .featured-video-plus iframe {
+  width: 100% !important;
+}
+/* line 143, ../scss/hackers_earth.scss */
+.single-page-content .widget .media {
+  margin: 0 !important;
+}
+/* line 149, ../scss/hackers_earth.scss */
+.single-page-content .st-theme-article-nav .button img {
+  max-height: 180px;
+  width: 100%;
+}
+
+/*header page ends*/
+/* Starts footer page */
+/* line 159, ../scss/hackers_earth.scss */
+#footer-area {
+  background-color: #f2f2f2;
+  padding-bottom: 20px;
+}
+/* line 162, ../scss/hackers_earth.scss */
+#footer-area nav {
+  padding-top: 50px;
+}
+/* line 168, ../scss/hackers_earth.scss */
+#footer-area ul li a:before {
+  background: #9b0;
+}
+/* line 171, ../scss/hackers_earth.scss */
+#footer-area ul li a:hover {
+  text-decoration: underline;
+  color: #333333;
+}
+
+/* line 179, ../scss/hackers_earth.scss */
+.main-footer {
+  background-color: #323754;
+  padding: 20px 0;
+}
+/* line 183, ../scss/hackers_earth.scss */
+.main-footer .footer-bottom-container img {
+  width: 110px;
+}
+/* line 186, ../scss/hackers_earth.scss */
+.main-footer .footer-bottom-container span {
+  float: right;
+  color: #f2f2f2;
+}
+
+/* End footer page */
+/*home blog start*/
+/* line 195, ../scss/hackers_earth.scss */
+.podcast-dates span {
+  margin-bottom: 0 !important;
+}
+
+/* line 199, ../scss/hackers_earth.scss */
+.blog-section {
+  margin-top: 10px;
+}
+/* line 201, ../scss/hackers_earth.scss */
+.blog-section .media {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* line 206, ../scss/hackers_earth.scss */
+#avatar-header-inside-block {
+  margin-bottom: 20px;
+}
+
+/*home blog end*/
+/**common start*/
+/* line 212, ../scss/hackers_earth.scss */
+.blog-content-block, .podcast-content-block, .single-page-content {
+  padding: 20px 20px 10px;
+}
+/* line 214, ../scss/hackers_earth.scss */
+.blog-content-block .hackerearth-post, .blog-content-block .hackerearth-webinar, .blog-content-block .hackerearth-podcast, .podcast-content-block .hackerearth-post, .podcast-content-block .hackerearth-webinar, .podcast-content-block .hackerearth-podcast, .single-page-content .hackerearth-post, .single-page-content .hackerearth-webinar, .single-page-content .hackerearth-podcast {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+/* line 219, ../scss/hackers_earth.scss */
+.blog-content-block h1.page-title, .podcast-content-block h1.page-title, .single-page-content h1.page-title {
+  font-size: 24px;
+  color: #46535e;
+  border-bottom: 1px solid #e5e7e8;
+  letter-spacing: 2px;
+  padding-bottom: 5px;
+  margin: 0 0px 20px !important;
+}
+
+/* line 232, ../scss/hackers_earth.scss */
+.current-cat {
+  border-color: #4183d7 !important;
+}
+
+/* line 236, ../scss/hackers_earth.scss */
+.hackerearth-post .media, .hackerearth-podcast .media, .hackerearth-webinar .media {
+  margin: 0 !important;
+}
+/* line 238, ../scss/hackers_earth.scss */
+.hackerearth-post .media iframe, .hackerearth-podcast .media iframe, .hackerearth-webinar .media iframe {
+  width: 100%;
+  height: auto;
+}
+/* line 243, ../scss/hackers_earth.scss */
+.hackerearth-post .text-part, .hackerearth-podcast .text-part, .hackerearth-webinar .text-part {
+  margin: 0 !important;
+}
+
+/**common end*/
+/*Starts side bar style*/
+/* line 251, ../scss/hackers_earth.scss */
+.archive .widget-area, .page-template .widget-area {
+  margin-top: 34px;
+}
+body.search #secondary {
+  margin-top: 34px;
+}
+.navbar {
+  margin-bottom: 10px;
+}
+
+/* line 256, ../scss/hackers_earth.scss */
+.category-block span {
+  background-color: transparent !important;
+  padding-left: 0 !important;
+  letter-spacing: 2px;
+}
+
+
+/* line 264, ../scss/hackers_earth.scss */
+.widget-area .widget {
+  margin-bottom: 35px;
+}
+/* line 267, ../scss/hackers_earth.scss */
+.widget-area .widget .popular h3 {
+  text-align: left;
+}
+/* line 271, ../scss/hackers_earth.scss */
+.widget-area .widget h3 {
+  margin: 0;
+  padding: 0 0 6px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #46535e;
+  border-bottom: 1px solid #e5e7e8;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+/* line 286, ../scss/hackers_earth.scss */
+.widget-area .widget ul li:last-child a {
+  border: none;
+}
+/* line 291, ../scss/hackers_earth.scss */
+.widget-area .widget ul li a:before {
+  background: #9b0;
+}
+/* line 294, ../scss/hackers_earth.scss */
+.widget-area .widget ul li a:hover {
+  color: #4c9cdf;
+}
+/* line 302, ../scss/hackers_earth.scss */
+.widget-area .widget.widget_categories button {
+  margin: 10px auto 0;
+  float: none;
+  display: table;
+  border-radius: 3px;
+  box-shadow: none;
+  border: none;
+  color: #fff;
+  background: #4c9cdf;
+  padding: 8px 30px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+/* line 313, ../scss/hackers_earth.scss */
+.widget-area .widget.widget_categories.full_cat ul.dcw {
+  max-height: 100%;
+}
+
+/*End side bar style*/
+/*Start podcast page*/
+/* line 326, ../scss/hackers_earth.scss */
+.podcast-nav {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 30px;
+}
+
+/* line 331, ../scss/hackers_earth.scss */
+.podcast-nav ul {
+  display: table;
+  margin: 0;
+}
+
+/* line 335, ../scss/hackers_earth.scss */
+.podcast-nav ul li {
+  padding: 0;
+}
+
+/* line 338, ../scss/hackers_earth.scss */
+.podcast-nav ul a {
+  display: block;
+  padding: 10px;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  margin-right: 3px;
+}
+/* line 344, ../scss/hackers_earth.scss */
+.podcast-nav ul a:hover {
+  color: #323754;
+  border-bottom: 3px solid #4c9cdf;
+}
+
+/* line 350, ../scss/hackers_earth.scss */
+.podcast-content-block .active-nav {
+  border-bottom: 3px solid #4c9cdf;
+}
+/* line 353, ../scss/hackers_earth.scss */
+.podcast-content-block .podcast-dates {
+  margin-top: 30px;
+}
+/* line 355, ../scss/hackers_earth.scss */
+.podcast-content-block .podcast-dates .date {
+  color: #46535e;
+  font-weight: 400;
+  border-bottom: 1px dotted;
+}
+/* line 361, ../scss/hackers_earth.scss */
+.podcast-content-block h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*End podcast page*/
+/*Pagination starts*/
+/* line 376, ../scss/hackers_earth.scss */
+.pagination li a {
+  display: flex !important;
+  color: #46535e;
+  align-items: center;
+  justify-content: center;
+}
+/* line 384, ../scss/hackers_earth.scss */
+.pagination .active a {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  display: inline-block;
+  text-align: center;
+  background: #4c9cdf;
+  color: #fff;
+  border-color: #4c9cdf;
+}
+
+.pagination .not-active-pag {
+  background: #f9f9f9;
+}
+
+/*Pagination ends*/
+/*single page start */
+/* line 402, ../scss/hackers_earth.scss */
+.st-theme-list-posts-b.st-sc-contentgrid .list-items,
+.st-theme-list-posts-c.st-sc-contentgrid .list-items,
+.st-theme-list-posts-d.st-sc-contentgrid .list-items,
+.st-theme-list-posts-g.st-sc-contentgrid .list-items,
+.st-theme-list-posts-m.st-sc-contentgrid .list-items {
+  width: 100%;
+}
+
+/* line 410, ../scss/hackers_earth.scss */
+.st-theme-list-posts-c.st-sc-contentgrid .list-items .media,
+.st-theme-list-posts-d.st-sc-contentgrid .list-items .media,
+.st-theme-list-posts-g.st-sc-contentgrid .list-items .media,
+.st-theme-list-posts-m.st-sc-contentgrid .list-items .media {
+  width: auto;
+  height: auto;
+  margin: 0 0 10px;
+  float: none;
+}
+
+/* line 420, ../scss/hackers_earth.scss */
+.st-theme-list-posts-c.st-sc-contentgrid .list-items .media img,
+.st-theme-list-posts-d.st-sc-contentgrid .list-items .media img,
+.st-theme-list-posts-g.st-sc-contentgrid .list-items .media img,
+.st-theme-list-posts-m.st-sc-contentgrid .list-items .media img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 430, ../scss/hackers_earth.scss */
+.st-theme-list-posts-d.st-sc-contentgrid .list-items .inner {
+  position: relative;
+}
+
+/* line 434, ../scss/hackers_earth.scss */
+.st-theme-list-posts-d.st-sc-contentgrid .list-items .inner .info {
+  padding: 15px;
+  width: 100%;
+  bottom: 0;
+  background: #222;
+}
+
+/* line 441, ../scss/hackers_earth.scss */
+
+.st-theme-list-posts-d.st-sc-contentgrid .list-items .inner .info .title {
+/*  min-height: 58px; */
+}
+
+/* line 446, ../scss/hackers_earth.scss */
+.st-theme-list-posts-d.st-sc-contentgrid .list-items .inner .info .title:hover {
+  color: #4c9cdf;
+}
+
+/* line 450, ../scss/hackers_earth.scss */
+.st-theme-list-posts-d.st-sc-contentgrid .list-items .inner .info .date {
+  color: #9ca3a8;
+}
+
+/* line 454, ../scss/hackers_earth.scss */
+.st-theme-list-posts-d.st-sc-contentgrid .list-items .inner .media {
+  margin-bottom: 0px;
+}
+
+/*single page ends*/
+/*author post page*/
+/* line 462, ../scss/hackers_earth.scss */
+.author-post .media {
+  height: 160px !important;
+}
+/* line 464, ../scss/hackers_earth.scss */
+.author-post .media img {
+  height: 160px !important;
+}
+/* line 467, ../scss/hackers_earth.scss */
+.author-post .media iframe {
+  height: 160px;
+}
+
+/*author post page end*/
+/* line 473, ../scss/hackers_earth.scss */
+#comments {
+  margin-top: 30px;
+}
+
+/* line 477, ../scss/hackers_earth.scss */
+.floating-social-media {
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0;
+}
+/* line 482, ../scss/hackers_earth.scss */
+.floating-social-media a {
+  display: inherit !important;
+  margin: 0 0 3px !important;
+}
+
+/* line 491, ../scss/hackers_earth.scss */
+.st-theme-footer-default .st-sc-shortcode.st-sc-text {
+  margin-top: 30px;
+}
+/* line 494, ../scss/hackers_earth.scss */
+.st-theme-footer-default .st-theme-copyright {
+  padding: 0;
+}
+
+/* line 502, ../scss/hackers_earth.scss */
+.owl-dots {
+  text-align: center;
+}
+/* line 504, ../scss/hackers_earth.scss */
+.owl-dots .owl-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #666;
+  margin: 0 6px;
+  display: inline-block;
+}
+/* line 511, ../scss/hackers_earth.scss */
+.owl-dots .owl-dot.active {
+  background: #F89406;
+}
+
+/* line 518, ../scss/hackers_earth.scss */
+.st-theme-breadcrumb {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 519, ../scss/hackers_earth.scss */
+.st-theme-breadcrumb li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+/* line 524, ../scss/hackers_earth.scss */
+.st-theme-breadcrumb li:last-child:before {
+  display: none;
+}
+
+/* line 529, ../scss/hackers_earth.scss */
+.st-theme-breadcrumb li:after {
+  content: '';
+  display: block;
+  color: #888;
+  position: absolute;
+  top: 9px;
+  right: -19px;
+  padding-right: 0;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid #fff;
+}
+
+/* line 543, ../scss/hackers_earth.scss */
+.st-theme-breadcrumb li:before {
+  content: '';
+  display: block;
+  color: #888;
+  position: absolute;
+  top: 9px;
+  right: -20px;
+  padding-right: 0;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid #888;
+}
+
+/* line 557, ../scss/hackers_earth.scss */
+.st-theme-breadcrumb li:last-child {
+  margin-right: 0;
+}
+
+/* line 558, ../scss/hackers_earth.scss */
+.st-theme-breadcrumb li:last-child:after {
+  display: none;
+}
+
+/* line 559, ../scss/hackers_earth.scss */
+.st-theme-breadcrumb li a {
+  color: #666;
+}
+
+/* line 560, ../scss/hackers_earth.scss */
+.st-theme-breadcrumb li a:hover, .st-theme-breadcrumb li:last-child {
+  color: #000;
+}
+
+/* line 564, ../scss/hackers_earth.scss */
+.widget-tabs .date {
+  margin: 0 !important;
+}
+/* line 568, ../scss/hackers_earth.scss */
+.widget-tabs .nav a {
+  font-weight: 700;
+}
+/* line 572, ../scss/hackers_earth.scss */
+.widget-tabs .nav .active a {
+  background: #F89406 !important;
+  color: #fff !important;
+}
+/* line 578, ../scss/hackers_earth.scss */
+.widget-tabs .text-part {
+  margin-left: 5%;
+}
+
+/* line 585, ../scss/hackers_earth.scss */
+.menu-item .children li:last-child {
+  margin-bottom: 0;
+  border-bottom: 1px dotted #ccc;
+}
+/* line 590, ../scss/hackers_earth.scss */
+.menu-item .children a {
+  padding-left: 15px;
+}
+/* line 592, ../scss/hackers_earth.scss */
+.menu-item .children a:before {
+  left: 0;
+}
+
+@media (max-width: 1000px) {
+  /* line 599, ../scss/hackers_earth.scss */
+  .floating-social-media {
+    display: none;
+  }
+
+  /* line 603, ../scss/hackers_earth.scss */
+  .entry-content .wp-caption {
+    width: auto !important;
+  }
+}
+@media (min-width: 1100px) {
+  /* line 608, ../scss/hackers_earth.scss */
+  .author-post .cols {
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  /* line 612, ../scss/hackers_earth.scss */
+  .author-post .cols .inner {
+    background-color: #fff;
+    margin-bottom: 0 !important;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+  }
+}
+#avatar-body-middle-block {
+  overflow: hidden;
+}
+#avatar-body-middle-block .avatar-wrapper {
+  overflow: hidden;
+}
+#avatar-body-middle-block #avatar-content {
+  margin: 0 auto;
+  float: none !important;
+}
+.menu-blog-category-menu {
+      display: table;
+    margin: 0 auto;
+}
+.blog-header nav {
+    padding: 0 15px !important;
+  }
+  #st-theme-main-menu ul.menu {
+    display: table;
+    margin: 0 auto;
+  }
+@media (max-width: 767px) {
+  /* line 618, ../scss/hackers_earth.scss */
+  #secondary {
+    overflow: hidden;
+  }
+  .feature .text-part {
+    margin-right: 0 !important;
+  }
+  .feature .text-part .description {
+    padding-right: 0 !important;
+    text-align: justify;
+  }
+
+  /* line 622, ../scss/hackers_earth.scss */
+  .archive .widget-area, .page-template .widget-area {
+    margin-top: 0px;
+  }
+
+  /* line 628, ../scss/hackers_earth.scss */
+  .blog-header .navbar-header a {
+    display: inline-block;
+    margin-top: 12px;
+  }
+  #st-theme-main-menu ul.menu > .menu-item > a {
+    padding: 10px 0 !important;
+    margin: 0 !important;
+  }
+  #st-theme-main-menu ul.menu > li.menu-item {
+    margin-left: 0 !important;
+  }
+  .single #avatar-main-content .entry-content {
+        padding: 30px 15px !important;
+  }
+  .modal-open {
+    overflow: visible !important;
+  }
+  .modal-backdrop {
+    display: none !important;
+  }
+  .home .title {
+    line-height: 25px;
+  }
+  .navbar-toggle {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
+  .blog-content-block, .podcast-content-block, .single-page-content {
+    padding: 0 !important;
+  }
+.blog-content-block .blog-grid-1, .blog-content-block .blog-grid-2 {
+    padding: 0 15px !important;
+  }
+  .navbar-header {
+    padding: 0 !important;
+  }
+  
+  /* line 637, ../scss/hackers_earth.scss */
+  .navbar-header button span {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  /* line 647, ../scss/hackers_earth.scss */
+  .navbar-header button[aria-expanded="true"] span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 7px;
+    position: relative;
+  }
+  /* line 656, ../scss/hackers_earth.scss */
+  .navbar-header button[aria-expanded="true"] span:nth-child(3) {
+    opacity: 0;
+  }
+  /* line 659, ../scss/hackers_earth.scss */
+  .navbar-header button[aria-expanded="true"] span:last-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    bottom: 5px;
+    position: relative;
+  }
+
+  /* line 671, ../scss/hackers_earth.scss */
+  .single-page-content {
+    padding: 0;
+  }
+  /* line 674, ../scss/hackers_earth.scss */
+  .single-page-content #avatar-pos-main-body {
+    margin: 0;
+  }
+  /* line 676, ../scss/hackers_earth.scss */
+  .single-page-content #avatar-pos-main-body article {
+    padding: 0;
+  }
+  /* line 678, ../scss/hackers_earth.scss */
+  .single-page-content #avatar-pos-main-body article .list-items-inner {
+    margin: 0;
+  }
+  /* line 684, ../scss/hackers_earth.scss */
+  .single-page-content .featured-video-plus iframe {
+    height: auto !important;
+  }
+
+  /* line 690, ../scss/hackers_earth.scss */
+  .category-header h3 {
+    display: inline-block;
+    margin: 12px 0 0;
+    font-size: 18px;
+    color: #fff;
+  }
+  /* line 698, ../scss/hackers_earth.scss */
+  .category-header .category-menu .primary-navigation {
+    margin: 0 !important;
+    padding: 0;
+  }
+  /* line 702, ../scss/hackers_earth.scss */
+  .category-header .category-menu nav.primary-navigation:before, .category-header .category-menu nav.primary-navigation:after {
+    display: none;
+  }
+  /* line 705, ../scss/hackers_earth.scss */
+  .category-header .category-menu .menu-item {
+    width: 100%;
+    border-bottom-color: transparent !important;
+  }
+  /* line 709, ../scss/hackers_earth.scss */
+  .category-header .category-menu .menu-item:last-child a {
+    border-bottom: none !important;
+  }
+  /* line 713, ../scss/hackers_earth.scss */
+  .category-header .category-menu .menu-item a {
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #eee !important;
+    font-size: 13px;
+    padding: 6px 20px 6px 0 !important;
+    margin: 0 15px;
+  }
+
+  /* line 725, ../scss/hackers_earth.scss */
+  .author-post .media {
+    height: 190px !important;
+  }
+  /* line 727, ../scss/hackers_earth.scss */
+  .author-post .media iframe {
+    height: 190px !important;
+    width: 100%;
+  }
+
+  /* line 737, ../scss/hackers_earth.scss */
+  .st-theme-list-posts-d.st-sc-contentgrid .list-items .inner .info .title {
+    min-height: 10px;
+  }
+}
+
+.feature .text-part .description {
+    font-weight: 300;
+    color: #46535e;
+}
+
+.whiteShadow {
+    height: 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0px -5px 10px 0px #fff inset;
+}
